@@ -12,4 +12,5 @@ Web inicial PWM
 ### 6. El usuario deberá poder hacer públicas, privadas o compartir las listas con otros usuarios
 ### 7. El usuario podrá ver y acceder directamente a los elementos destacados
 ### 8. El usuario podrá cambiar aspectos de su perfil (foto, descripcion, juegos favoritos, etc)
-
+### 9. El usuario deberá volver al Home dándole a un botón específico del header
+### 10. El usuario podrá añadir y borrar juegos en sus listas
