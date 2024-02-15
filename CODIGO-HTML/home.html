@@ -40,6 +40,12 @@
                 margin-right: 50px;
                 display:inline-block;
             }
+
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
         </style>
 
         <title> Pagina Juegos</title>
@@ -72,7 +78,7 @@
             </div>
             <br>
         </section>
-        <section>
+        <section class= "clearfix">
             <img src = "elvis.jpg" style = "width: 100">
             <img src = "elvis.jpg" style = "width: 100">
             <img src = "elvis.jpg" style = "width: 100">
@@ -85,7 +91,7 @@
             <img src = "elvis.jpg" style = "width: 100">
             <img src = "elvis.jpg" style = "width: 100">
         </section>
-        <section>
+        <section class="clearfix">
             <aside id = "section_iz">
                 <ul>
                     <li id= #main_nav li>
