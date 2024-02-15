@@ -1,1 +1,130 @@
+<html>
+    <head>
+        <style>
+            body {
+                    text-align: center;
+            }
 
+            #main_menu{
+                background-color:lightblue;
+                padding: 5px 15px;
+            }
+            #main_nav li{
+                display:inline-block;
+                list-style:none ;
+                padding: 3px ;
+            }
+            #section_iz{
+                background-color: blue;
+                text-align: left;
+                float: left;
+                margin-left: 50px;
+            }
+            #section_de{
+                background-color: brown;
+                text-align: right;
+                float: right;  <!--esto sirve para la posicion-->
+                margin-right: 50px;
+                
+            }
+            .li_style_buscador{
+                float: right;
+            }
+            #fotter_style{
+                color: aquamarine;
+        
+            }
+            #un_center_right{
+                text-align: right;
+                float: right;
+                margin-right: 50px;
+                display:inline-block;
+            }
+        </style>
+
+        <title> Pagina Juegos</title>
+    </head>
+    <body>
+            <header id = "main_menu">
+                <nav id = "main_nav">
+                    <ul>
+                        <li> link 1</li>
+                        <li> link 2</li>
+                        <li> link 3</li>
+                        <li> link 4</li>
+                        <li class = "li_style_buscador">
+                        Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
+                            <input type="submit" value="Buscar">                  
+                        </li>
+                    </ul>
+                
+                </nav>
+            </header>
+        <section>
+            <h2>Novedades</h2>
+            <div class="slideshow-container"> 
+                <div class="mySlides fade">
+                    <img src = "elvis.jpg" style="width: 400px", style="height: 200px;">
+                    <div class="text"> Elvis murio en el vater</div>
+                </div>
+                <a class = "prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class = "next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <br>
+        </section>
+        <section>
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+            <br>
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+            <img src = "elvis.jpg" style = "width: 100">
+        </section>
+        <section>
+            <aside id = "section_iz">
+                <ul>
+                    <li id= #main_nav li>
+                        <img src = "elvis.jpg" style = "width: 100">
+                        <img src = "elvis.jpg" style = "width: 100">
+                        <br>
+                    </li>
+                    <li id= #main_nav li>
+                        <img src = "elvis.jpg" style = "width: 100">
+                        <img src = "elvis.jpg" style = "width: 100">
+                        <br>
+                    </li>
+                    <li id= #main_nav li>
+                        <img src = "elvis.jpg" style = "width: 100">
+                        <img src = "elvis.jpg" style = "width: 100">
+                    </li>
+                </ul>
+            </aside>
+            <aside id = "section_de">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+            </aside>
+        </section>
+        <footer id = fotter_style>
+            <h1>JuegosList</h1>
+            <ul id = un_center_right>
+                <li> <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a> </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                </li>
+                <li>
+                    <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                </li>
+                <li>
+                    <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
