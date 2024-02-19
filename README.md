@@ -14,3 +14,4 @@ Web inicial PWM
 ### 8. El usuario podrá cambiar aspectos de su perfil (foto, descripcion, juegos favoritos, etc)
 ### 9. El usuario deberá volver al Home dándole a un botón específico del header
 ### 10. El usuario podrá añadir y borrar juegos en sus listas
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout
