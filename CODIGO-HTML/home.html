@@ -1,6 +1,12 @@
 <html>
     <head>
         <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; /* Fuente por defecto */
+            }
             body {
                     text-align: center;
             }
@@ -15,30 +21,38 @@
                 padding: 3px ;
             }
             #section_iz{
+                display: inline;
                 background-color: blue;
-                text-align: left;
-                float: left;
-                margin-left: 50px;
+                width: 30%;
             }
             #section_de{
+                display: inline;
                 background-color: brown;
-                text-align: right;
-                float: right;  <!--esto sirve para la posicion-->
-                margin-right: 50px;
-                
+                width: 30%;
             }
+
+            #secciones_bajas{
+                display: inline-block;
+            }
+
             .li_style_buscador{
                 float: right;
             }
             #fotter_style{
                 background-color: aquamarine;
+                padding: 30px;
         
             }
-            #un_center_right{
-                text-align: right;
-                float: right;
-                margin-right: 50px;
+            #home_footer{
+                float: left;
+                margin-left: 50px;
                 display:inline-block;
+                list-style: none;
+            }
+
+            #links_footer{
+                display: inline;
+                text-align: center;
             }
 
             .clearfix::after {
@@ -46,91 +60,95 @@
                 display: table;
                 clear: both;
             }
+
+            .mySlides_fade {
+                margin: auto;
+                text-align: center;
+                width: 80%;
+                height: 300px;
+                background-color: aqua;
+                padding-bottom: 20px;
+                position: relative;
+                z-index: 1;
+            }
+
+            #titulo_slider {
+                position: absolute;
+                z-index: 2;
+            }
         </style>
 
         <title> Pagina Juegos</title>
     </head>
     <body>
-            <header id = "main_menu">
-                <nav id = "main_nav">
-                    <ul>
-                        <li> link 1</li>
-                        <li> link 2</li>
-                        <li> link 3</li>
-                        <li> link 4</li>
-                        <li class = "li_style_buscador">
-                        Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
-                            <input type="submit" value="Buscar">                  
-                        </li>
-                    </ul>
-                
-                </nav>
-            </header>
-        <section>
-            <h2>Novedades</h2>
-            <div class="slideshow-container"> 
-                <div class="mySlides fade">
-                    <img src = "elvis.jpg" style="width: 400px", style="height: 200px;">
-                    <div class="text"> Elvis murio en el vater</div>
-                </div>
-                <a class = "prev" onclick="plusSlides(-1)">&#10094</a>
-                <a class = "next" onclick="plusSlides(1)">&#10095</a>
-            </div>
-            <br>
-        </section>
-        <section class= "clearfix">
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-            <br>
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-            <img src = "elvis.jpg" style = "width: 100">
-        </section>
-        <section class="clearfix">
-            <aside id = "section_iz">
+        <header id = "main_menu">
+            <nav id = "main_nav">
                 <ul>
-                    <li id= #main_nav li>
-                        <img src = "elvis.jpg" style = "width: 100">
-                        <img src = "elvis.jpg" style = "width: 100">
-                        <br>
-                    </li>
-                    <li id= #main_nav li>
-                        <img src = "elvis.jpg" style = "width: 100">
-                        <img src = "elvis.jpg" style = "width: 100">
-                        <br>
-                    </li>
-                    <li id= #main_nav li>
-                        <img src = "elvis.jpg" style = "width: 100">
-                        <img src = "elvis.jpg" style = "width: 100">
+                    <li> <a href="pagina6.html">link 1</a></li>
+                    <li> <a href="pagina6.html">link 2</a></li>
+                    <li> <a href="pagina6.html">link 3</a></li>
+                    <li> <a href="pagina6.html">link 4</a></li>
+                    <li class = "li_style_buscador">
+                    Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
+                        <input type="submit" value="Buscar">                  
                     </li>
                 </ul>
-            </aside>
-            <aside id = "section_de">
+                
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Novedades</h2>
+                <div class="slideshow-container"> 
+                    <div class="mySlides_fade">
+                        <img src = "elvis.jpg" style="width: 100%", style="height: 50%;">
+                        <p id = "titulo_slider"> Elvis murio en el vater</p>
+                    </div>
+                    <a class = "prev" onclick="plusSlides(-1)">&#10094</a>
+                    <a class = "next" onclick="plusSlides(1)">&#10095</a>
+                </div>
+                <br>
+            </section>
+            <section class= "clearfix">
                 <img src = "elvis.jpg" style = "width: 100">
                 <img src = "elvis.jpg" style = "width: 100">
-            </aside>
-        </section>
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+            </section>
+            <section class="clearfix", id="secciones_bajas">
+                <article id = "section_iz">
+                    <img src = "elvis.jpg" style = "width: 100">
+                    <img src = "elvis.jpg" style = "width: 100">
+                    <br>
+                    <img src = "elvis.jpg" style = "width: 100">
+                    <img src = "elvis.jpg" style = "width: 100">
+                    <br>
+                    <img src = "elvis.jpg" style = "width: 100">
+                    <img src = "elvis.jpg" style = "width: 100">
+                </article>
+                <article id = "section_de">
+                    <img src = "elvis.jpg" style = "width: 100">
+                    <img src = "elvis.jpg" style = "width: 100">
+                </article>
+            </section>
+        </main>
         <footer id = fotter_style>
-            <h1>JuegosList</h1>
-            <ul id = un_center_right>
+            <ul id = home_footer>
                 <li> <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a> </li>
             </ul>
-            <ul>
-                <li>
-                    <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                </li>
-                <li>
-                    <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                </li>
-                <li>
-                    <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                </li>
-            </ul>
+            <div id = "links_footer">
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+            </div>
         </footer>
     </body>
 </html>
