@@ -11,15 +11,29 @@
                     text-align: center;
             }
 
-            #main_menu{
-                text-align: left;
+            #main_menu{;
                 background-color:lightblue;
-                padding: 5px 15px;
+                padding: 20px 15px;
             }
             #main_nav li{
                 display:inline-block;
                 list-style:none ;
-                padding: 3px ;
+                padding: 3px;
+                text-align: center;
+                margin-right: 60px;
+            }
+            .imagen_home{
+                display: inline-block;
+                width: 8%;
+            }
+            .links_header{
+                display: inline-block;
+                width: 70%;
+            }
+            .li_style_buscador{
+                display: inline-block;
+                width: 22%;
+                text-align: right;
             }
             #section_iz{
                 display: inline;
@@ -84,18 +98,17 @@
     <body>
         <header id = "main_menu">
             <nav id = "main_nav">
-                <ul>
-                    <li> <a href="pagina.html"><img src = "descarga.jpg", width="25px" >   </a></li>
+                <a class="imagen home"href="pagina.html"><img src = "descarga.jpg", width="25px" >
+                <ul class="links_header">
                     <li> <a href="pagina6.html">link 1</a></li>
                     <li> <a href="pagina6.html">link 2</a></li>
                     <li> <a href="pagina6.html">link 3</a></li>
                     <li> <a href="pagina6.html">link 4</a></li>
-                    <li class = "li_style_buscador">
+                </ul>
+                <div class = "li_style_buscador">
                     Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
                         <input type="submit" value="Buscar">                  
-                    </li>
-                </ul>
-                
+                </div>    
             </nav>
         </header>
         <main>
