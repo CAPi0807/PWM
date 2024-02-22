@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; /* Fuente por defecto */
+            }
+            #main_menu{;
+                background-color:lightblue;
+                padding: 20px 15px;
+            }
+            #main_nav li{
+                display:inline-block;
+                list-style:none ;
+                padding: 3px;
+                text-align: center;
+                margin-right: 60px;
+            }
+            .imagen_home{
+                display: inline-block;
+                width: 8%;
+            }
+            .links_header{
+                display: inline-block;
+                width: 70%;
+            }
+            .li_style_buscador{
+                display: inline-block;
+                width: 22%;
+                text-align: right;
+            }
+
+            body {
+                    text-align: center;
+            }
+
+            .filtros{
+                background-color: green;
+                padding: 30px;
+                margin: 20px 200px;
+            }
+            .filtros button{
+                margin: 0px 70px;
+            }
+
+            .footer_style{
+                background-color: aquamarine;
+                padding: 30px;
+            }
+
+            #home_footer{
+                float: left;
+                margin-left: 50px;
+                display:inline-block;
+                list-style: none;
+            }
+
+            #links_footer{
+                display: inline;
+                text-align: center;
+            }
+
+            .paginas_nav{
+                margin: 50px;
+            }
+            .paginas_nav button{
+                margin: 10px;
+                border-radius: 50%;
+            }
+            .flecha_back{
+                background-color: white;
+            }
+            
+        </style>
+
+        <title> Pagina Juegos</title>
+    </head>
+    <body>
+        <header id = "main_menu">
+            <nav id = "main_nav">
+                <a class="imagen home"href="pagina.html"><img src = "descarga.jpg", width="25px" >
+                <ul class="links_header">
+                    <li> <a href="pagina6.html">link 1</a></li>
+                    <li> <a href="pagina6.html">link 2</a></li>
+                    <li> <a href="pagina6.html">link 3</a></li>
+                    <li> <a href="pagina6.html">link 4</a></li>
+                </ul>
+                <div class = "li_style_buscador">
+                    Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
+                        <input type="submit" value="Buscar">                  
+                </div>    
+            </nav>
+        </header>
+
+        <main>
+            <section class="filtros">
+                <button>Filtro 1</button>
+                <button>Filtro 2</button>
+                <button>Filtro 3</button>
+                <button>Filtro 4</button>
+            </section>
+            <section class= "clearfix">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+            </section>
+            <div class="paginas_nav">
+                <button class="flecha_back"><-</button>
+                <button>Botón 1</button>
+                <button>Botón 2</button>
+                <button>Botón 3</button>
+                <button>Botón 4</button>
+                <button class="flecha_forward">-></button>
+            </div>
+
+        </main>
+
+        <footer class="footer_style">
+            <ul id = home_footer>
+                <li> <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a> </li>
+            </ul>
+            <div id = "links_footer">
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+            </div>
+        </footer>
+
+    </body>
+</html>
