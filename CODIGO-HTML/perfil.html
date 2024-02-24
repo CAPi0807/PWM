@@ -1,6 +1,7 @@
-<html>
+<<html>
 <head>
     <style>
+        
         #main_menu{
             background-color:lightblue;
             padding: 5px 15px;
@@ -27,24 +28,18 @@
             display: inline;
             text-align: center;
         }
-        #foto_perfil aside{
-            float: left;
-            width: 40%;
-            margin-left: 5%;
+        #foto_perfil{
             display: flex;
-            align-items: center;
-            background-color: blueviolet;  
+            align-items: flex-start;
+            margin-left: 15px;
+            margin-top: 20px;
+
         }
         .descripcion_juego {
-                  float: right;
-                  width: 60%;
-                  height: 35%;
-                  background: goldenrod;
-                  margin-right: 5%;
-                  margin-top: 2%;
-                  display: flex;
-                  align-items: center;
-              }
+                background: goldenrod;
+                max-width: 60%;
+                margin-left: 50px;
+        }
         #orden_listas{
             list-style :none;
             display: inline-block;
@@ -74,20 +69,20 @@
 
         </nav>
     </header><!--ver como hacer hata aqui header-->
-    <article class = descripcion_juego>
-        <p> 
+    <section id = "foto_perfil"><!--ver si para formatear la imagen hay que formatear la section-->
+        <img src = "C:\Users\34690\OneDrive\Documentos\PWM\blank-profile-picture-973460_960_720.webp" alt = "nombre juego" width="20%">
+        <article class = descripcion_juego>
             <h1>Descripción del juego:</h1>
-            texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
-            auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
-            adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
-            afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
+            <p>
+                texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
+                auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
+                adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
+                afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
+            </p>
             <h2>fecha de salida</h2>
             <h3> autor/compañia</h3>
-        </p>
-    </article>
-    <aside id = "foto_perfil"><!--ver si para formatear la imagen hay que formatear la section-->
-        <img src = "img.jpg" alt = "nombre juego" height="35%">
-    </aside>
+        </article>
+    </section>
     <ul id = orden_listas>
         <li><a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="lista1"></a></li>
         <li><a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="lista2"></a></li>
