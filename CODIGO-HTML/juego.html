@@ -1,37 +1,228 @@
 <html>
     <head>
         <style>
-              .container {
-                  float: right;
-                  width: 60%;
-                  height: 35%;
-                  background: goldenrod;
-                  margin-right: 5%;
-                  margin-top: 2%;
-                  display: flex;
-                  align-items: center;
-              }
-              #imagenPrincipal aside{
-                  float: left;
-                  width: 40%;
-                  margin-left: 5%;
-                  display: flex;
-                  align-items: center;
-              }
+            body {
+                background: linear-gradient(to right, #ffcc00, #ff6600);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0; /* Asegura que no haya márgenes */
+                padding: 0; /* Asegura que no haya relleno */
+            }   
+            /*estilo compartido con todas las páginas*/
+            #main_menu{
+                background-color:lightblue;
+                padding: 20px 15px;
+                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+            }
+
+            #main_nav li{
+                display:inline-block;
+                list-style:none ;
+                padding: 3px;
+                text-align: center;
+                margin-right: 60px;
+                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+            }
+
+            .imagen_home{
+                display: inline-block;
+                width: 8%;
+            }
+
+            .links_header{
+                display: inline-block;
+                width: 70%;
+            }
+
+            .li_style_buscador{
+                display: inline-block;
+                width: 22%;
+                text-align: right;
+            }
+
+            .li_style_buscador{
+                float: right;
+            }
+            #fotter_style{
+                background-color: aquamarine;
+                padding: 30px;
+                margin-top: 15px;
+            }
+            #home_footer{
+                float: left;
+                margin-left: 50px;
+                display:inline-block;
+                list-style: none;
+                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+            }
+
+            #links_footer{
+                display: inline;
+                text-align: center;
+            }
+
+            /*fin estilo compartido con todas las páginas*/
+
+            #foto_perfil{
+                display: flex;
+                align-items: flex-start;
+                margin-left: 4.5%;
+                margin-top: 2%;
+            }
+            .descripcion_juego {
+                background: goldenrod;
+                width: 100%;
+                max-width: 100%;
+                margin-left: 4.5%;;
+                margin-right: 4.5%;
+                text-align: left;
+            }
+
+            .info {
+                clear: both;
+                background: pink;
+                max-width: 95%;
+                max-height: 100%;
+                margin-top: 20px;
+                margin-left: 5%;
+                margin-right: 5%;
+                display: flex;
+                align-items: flex-start;
+                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+            }
+
+            table {
+                width: 100%; /* Ajusta el ancho de la tabla al 100% del contenedor */
+                border-collapse: collapse; /* Combina los bordes de las celdas */
+                border: 2px solid black; /* Establece un borde sólido de 2px con color gris claro */
+            }
+
+            th, td {
+                border: 1px solid black; /* Establece un borde sólido de 1px con color gris claro para las celdas */
+                padding: 8px; /* Añade un espacio interno de 8px alrededor del contenido de las celdas */
+                text-align: left; /* Alinea el texto a la izquierda dentro de las celdas */
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2; /* Aplica un color de fondo gris claro a las filas pares */
+            }
+
+            tr:nth-child(odd) {
+                background-color: grey; /* Aplica un color de fondo gris claro a las filas pares */
+            }
+            th {
+                background-color: #4CAF50; /* Color de fondo verde para las celdas de encabezado */
+                color: white; /* Texto en color blanco para las celdas de encabezado */
+            }
         </style>
     </head>  
     <body>
-      <!-- TEMPLATE PARA FOTO_DESCRIPCION -->
-         <section class="container">
-            <article>
-                Articulo 1
-            </article>
-            <article>
-                Articulo 2
+        <!--CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
+        <header id = "main_menu">
+            <nav id = "main_nav">
+                <a class="imagen home"href="pagina.html"><img src = "descarga.jpg", width="25px" >
+                <ul class="links_header">
+                    <li> <a href="pagina6.html">link 1</a></li>
+                    <li> <a href="pagina6.html">link 2</a></li>
+                    <li> <a href="pagina6.html">link 3</a></li>
+                    <li> <a href="pagina6.html">link 4</a></li>
+                </ul>
+                <div class = "li_style_buscador">
+                    Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
+                        <input type="submit" value="Buscar">                  
+                </div>    
+            </nav>
+        </header>
+        <!--FIN CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
+
+        <!-- TEMPLATE PARA FOTO_DESCRIPCION -->
+        <section id = "foto_perfil"><!--ver si para formatear la imagen hay que formatear la section-->
+            <img src = "imagenEjemplo.jpg" alt = "nombre juego" width="20%">
+            <article class = descripcion_juego>
+                <h1>Descripción del juego:</h1>
+                <p>
+                    texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
+                    auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
+                    adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
+                    afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
+                </p>
+                <h2>fecha de salida</h2>
+                <h3> autor/compañia</h3>
             </article>
         </section>
-        <aside id ="imagenPrincipal">
-            <img src = "descarga.jpg" alt = "Imagen del juego" height="35%">
-        </aside>
+
+        <section class="info">
+            <h1>Descripción del juego:</h1>
+            <p>
+                texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
+                auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
+                adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
+                afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
+            </p>
+            <h2>fecha de salida</h2>
+            <h3> autor/compañia</h3>
+        </section>
+
+        <section class="info">
+            <h1>OTRA SECCION CON MAS INFORMACION:</h1>
+            <p>
+                texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
+                auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
+                adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
+                afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
+            </p>
+            <h2>fecha de salida</h2>
+            <h3> autor/compañia</h3>
+        </section>
+
+        <!-- Tabla de especificaciones -->
+        <section class="info">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>SO</th>
+                    <th>Procesador</th>
+                    <th>Memoria</th>
+                    <th>Gráficos</th>
+                    <th>DirectX</th>
+                    <th>Almacenamiento</th>
+                    <th>Tarjeta de sonido</th>
+                  </tr>
+                  <tr>
+                    <td>Minimo:</td>
+                    <td>Windows 10</td>
+                    <td>INTEL CORE I5-8400 o AMD RYZEN 3 3300X</td>
+                    <td> 12 GB de RAM</td>
+                    <td>NVIDIA GEFORCE GTX 1060 3 GB o AMD RADEON RX 580 4 GB</td>
+                    <td>Versión 12</td>
+                    <td>60 GB de espacio disponible</td>
+                    <td> Windows Compatible Audio Device</td>
+                  </tr>
+                  <tr>
+                    <td>Recomendado:</td>
+                    <td>Windows 10/11</td>
+                    <td>INTEL CORE I7-8700K or AMD RYZEN 5 3600X</td>
+                    <td>16 GB de RAM</td>
+                    <td>NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB</td>
+                    <td>Versión 12</td>
+                    <td>60 GB de espacio disponible</td>
+                    <td>Windows Compatible Audio Device</td>
+                  </tr>                
+            </table>
+        </section>
+
+        <!--CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
+        <footer id = fotter_style>
+            <ul id = home_footer>
+                <li> <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a> </li>
+            </ul>
+            <div id = "links_footer">
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
+            </div>
+        </footer>
+        <!--FIN CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
     </body>
 </html>
