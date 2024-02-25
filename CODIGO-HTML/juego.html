@@ -12,41 +12,19 @@
                 padding-bottom: 5em;
             }   
             /*estilo compartido con todas las páginas*/
-            #main_menu{
-
-                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
-            }
-
-            #main_nav li{
+            nav {
                 display:inline-block;
-                list-style:none ;
-                padding: 3px;
                 text-align: center;
-                margin-right: 60px;
                 overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
-                 background-color:lightblue;
-                padding: 20px 15px;
+                background-color:lightblue;
+                padding: 20px 0px;
+                width: 100%;
             }
-
-            .imagen_home{
-                display: inline-block;
-                width: 8%;
-            }
-
-            .links_header{
-                display: inline-block;
-                width: 70%;
-            }
-
             .li_style_buscador{
-                display: inline-block;
                 width: 22%;
-                text-align: right;
-            }
-
-            .li_style_buscador{
                 float: right;
-            }
+                margin-right: 30px;
+            }      
             footer {
                 background-color: aquamarine;
                 padding: 1em 0;
@@ -119,21 +97,19 @@
     </head>  
     <body>
         <!--CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
-        <header id = "main_menu">
-            <nav id = "main_nav">
-                <a class="imagen home"href="pagina.html"><img src = "descarga.jpg", width="25px" >
-                <ul class="links_header">
-                    <li> <a href="pagina6.html">link 1</a></li>
-                    <li> <a href="pagina6.html">link 2</a></li>
-                    <li> <a href="pagina6.html">link 3</a></li>
-                    <li> <a href="pagina6.html">link 4</a></li>
-                </ul>
-                <div class = "li_style_buscador">
-                    Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
-                        <input type="submit" value="Buscar">                  
-                </div>    
+        <header>
+            <nav>
+              <a href="pagina.html" style="float: left; margin-left: 30px;"><img src = "imagenEjemplo.jpg", width="25px">
+              <a href="pagina6.html">link 1</a>
+              <a href="pagina6.html">link 2</a>
+              <a href="pagina6.html">link 3</a>
+              <a href="pagina6.html">link 4</a>
+              <div class = "li_style_buscador">
+                  Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
+                      <input type="submit" value="Buscar">                  
+              </div>
             </nav>
-        </header>
+          </header>
         <!--FIN CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
         <main>
         <!-- TEMPLATE PARA FOTO_DESCRIPCION -->
