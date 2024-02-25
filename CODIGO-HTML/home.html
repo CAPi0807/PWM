@@ -1,15 +1,16 @@
 <html>
     <head>
         <style>
-            * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif; /* Fuente por defecto */
-            }
             body {
-                    text-align: center;
-            }
+                background: linear-gradient(to right, #ffcc00, #ff6600);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0; /* Asegura que no haya márgenes */
+                padding: 0; /* Asegura que no haya relleno */
+                min-height: 100vh; /*Esto es para que siempre se cree el body ajustándose al tamaño de la pantalla*/
+                position: relative;
+                padding-bottom: 5em;
+            }  
 
             #main_menu{
                 background-color:lightblue;
@@ -55,23 +56,19 @@
             .li_style_buscador{
                 float: right;
             }
-            #fotter_style{
+            footer {
                 background-color: aquamarine;
-                padding: 30px;
-                margin-top: 15px;
-            }
-            #home_footer{
-                float: left;
-                margin-left: 50px;
-                display:inline-block;
-                list-style: none;
-            }
-
-            #links_footer{
-                display: inline;
+                padding: 1em 0;
+                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
+                bottom: 0; /*Para que vaya al final*/
+                position: absolute; /*Para que siempre este al final*/
                 text-align: center;
+                display: inline;
             }
-
+            footer img {
+                width: 20px; /* Tamaño deseado en píxeles */
+                height: auto; /* Esto asegura que la proporción se mantenga */
+            }
             .clearfix::after {
                 content: "";
                 display: table;
@@ -156,16 +153,12 @@
                 </article>
             </section>
         </main>
-        <footer id = fotter_style>
-            <ul id = home_footer>
-                <li> <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a> </li>
-            </ul>
-            <div id = "links_footer">
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-            </div>
+        <footer> 
+            <a href="pagina6.html" style="float: left; margin-left: 50px;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
         </footer>
     </body>
 </html>

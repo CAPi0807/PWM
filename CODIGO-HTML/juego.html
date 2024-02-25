@@ -13,8 +13,7 @@
             }   
             /*estilo compartido con todas las páginas*/
             #main_menu{
-                background-color:lightblue;
-                padding: 20px 15px;
+
                 overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
             }
 
@@ -25,6 +24,8 @@
                 text-align: center;
                 margin-right: 60px;
                 overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+                 background-color:lightblue;
+                padding: 20px 15px;
             }
 
             .imagen_home{
@@ -46,25 +47,19 @@
             .li_style_buscador{
                 float: right;
             }
-            #fotter_style{
+            footer {
                 background-color: aquamarine;
                 padding: 1em 0;
                 width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
                 bottom: 0; /*Para que vaya al final*/
                 position: absolute; /*Para que siempre este al final*/
                 text-align: center;
-            }
-            #home_footer{
-                float: left;
-                margin-left: 50px;
-                list-style: none;
-                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
-
-            }
-
-            #links_footer{
                 display: inline;
-                text-align: center;
+            }
+            footer img {
+                width: 40px; /* Tamaño deseado en píxeles */
+                height: auto; /* Esto asegura que la proporción se mantenga */
+                padding: 10px;
             }
 
             /*fin estilo compartido con todas las páginas*/
@@ -140,11 +135,24 @@
             </nav>
         </header>
         <!--FIN CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
-
+        <main>
         <!-- TEMPLATE PARA FOTO_DESCRIPCION -->
-        <section id = "foto_perfil"><!--ver si para formatear la imagen hay que formatear la section-->
-            <img src = "imagenEjemplo.jpg" alt = "nombre juego" width="20%">
-            <article class = descripcion_juego>
+            <section id = "foto_perfil"><!--ver si para formatear la imagen hay que formatear la section-->
+                <img src = "imagenEjemplo.jpg" alt = "nombre juego" width="20%">
+                <article class = descripcion_juego>
+                    <h1>Descripción del juego:</h1>
+                    <p>
+                        texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
+                        auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
+                        adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
+                        afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
+                    </p>
+                    <h2>fecha de salida</h2>
+                    <h3> autor/compañia</h3>
+                </article>
+            </section>
+
+            <section class="info">
                 <h1>Descripción del juego:</h1>
                 <p>
                     texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
@@ -154,80 +162,63 @@
                 </p>
                 <h2>fecha de salida</h2>
                 <h3> autor/compañia</h3>
-            </article>
-        </section>
+            </section>
 
-        <section class="info">
-            <h1>Descripción del juego:</h1>
-            <p>
-                texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
-                auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
-                adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
-                afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
-            </p>
-            <h2>fecha de salida</h2>
-            <h3> autor/compañia</h3>
-        </section>
+            <section class="info">
+                <h1>OTRA SECCION CON MAS INFORMACION:</h1>
+                <p>
+                    texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
+                    auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
+                    adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
+                    afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
+                </p>
+                <h2>fecha de salida</h2>
+                <h3> autor/compañia</h3>
+            </section>
 
-        <section class="info">
-            <h1>OTRA SECCION CON MAS INFORMACION:</h1>
-            <p>
-                texxtototovjfdjnsdiljnaidfnaifvjsoidjsdfnsiddf
-                auifghisfhgiafuhgakdhgaidhuadifdhaifgghafghaeg
-                adfhafghaidfhgaidfhgaidfhaifhgalfighalffghaffg
-                afgoiahfgaiogjaoidfjgoiaijdfogjadfoiigjaoifdgj
-            </p>
-            <h2>fecha de salida</h2>
-            <h3> autor/compañia</h3>
-        </section>
-
-        <!-- Tabla de especificaciones -->
-        <section class="info">
-            <table>
-                <tr>
-                    <th></th>
-                    <th>SO</th>
-                    <th>Procesador</th>
-                    <th>Memoria</th>
-                    <th>Gráficos</th>
-                    <th>DirectX</th>
-                    <th>Almacenamiento</th>
-                    <th>Tarjeta de sonido</th>
-                  </tr>
-                  <tr>
-                    <td>Minimo:</td>
-                    <td>Windows 10</td>
-                    <td>INTEL CORE I5-8400 o AMD RYZEN 3 3300X</td>
-                    <td> 12 GB de RAM</td>
-                    <td>NVIDIA GEFORCE GTX 1060 3 GB o AMD RADEON RX 580 4 GB</td>
-                    <td>Versión 12</td>
-                    <td>60 GB de espacio disponible</td>
-                    <td> Windows Compatible Audio Device</td>
-                  </tr>
-                  <tr>
-                    <td>Recomendado:</td>
-                    <td>Windows 10/11</td>
-                    <td>INTEL CORE I7-8700K or AMD RYZEN 5 3600X</td>
-                    <td>16 GB de RAM</td>
-                    <td>NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB</td>
-                    <td>Versión 12</td>
-                    <td>60 GB de espacio disponible</td>
-                    <td>Windows Compatible Audio Device</td>
-                  </tr>                
-            </table>
-        </section>
-
+            <!-- Tabla de especificaciones -->
+            <section class="info">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>SO</th>
+                        <th>Procesador</th>
+                        <th>Memoria</th>
+                        <th>Gráficos</th>
+                        <th>DirectX</th>
+                        <th>Almacenamiento</th>
+                        <th>Tarjeta de sonido</th>
+                    </tr>
+                    <tr>
+                        <td>Minimo:</td>
+                        <td>Windows 10</td>
+                        <td>INTEL CORE I5-8400 o AMD RYZEN 3 3300X</td>
+                        <td> 12 GB de RAM</td>
+                        <td>NVIDIA GEFORCE GTX 1060 3 GB o AMD RADEON RX 580 4 GB</td>
+                        <td>Versión 12</td>
+                        <td>60 GB de espacio disponible</td>
+                        <td> Windows Compatible Audio Device</td>
+                    </tr>
+                    <tr>
+                        <td>Recomendado:</td>
+                        <td>Windows 10/11</td>
+                        <td>INTEL CORE I7-8700K or AMD RYZEN 5 3600X</td>
+                        <td>16 GB de RAM</td>
+                        <td>NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB</td>
+                        <td>Versión 12</td>
+                        <td>60 GB de espacio disponible</td>
+                        <td>Windows Compatible Audio Device</td>
+                    </tr>                
+                </table>
+            </section>
+        </main>
         <!--CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
-        <footer id = fotter_style>
-            <ul id = home_footer>
-                <li> <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a> </li>
-            </ul>
-            <div id = "links_footer">
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="/imagenes/foto1.jpg" alt="Paisaje"></a>
-            </div>
+        <footer> 
+            <a href="pagina6.html" style="float: left; margin-left: 50px;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
         </footer>
         <!--FIN CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
     </body>
