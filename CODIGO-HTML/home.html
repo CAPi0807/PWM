@@ -77,6 +77,21 @@
                 position: absolute;
                 z-index: 2;
             }
+            #ocho_recomendaciones_estilo{
+                text-align: center;
+            }
+            #contenedor_imagenes_alargada{
+                width: 40%;
+                margin-top: 30px;
+                padding: 5px;
+            }
+            .imagen-rectangular { /*revisar como poner imagenes rectangulares*/
+            width: 600px; /* Ajusta el ancho según tus necesidades */
+            height: 200px; /* Ajusta la altura según tus necesidades */
+            object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del cuadro sin distorsión */
+        }
+         
+            
         </style>
 
         <title> Pagina Juegos</title>
@@ -95,20 +110,20 @@
               </div>
             </nav>
           </header>
-        <main>
+          <main>
             <section>
-                <h2>Novedades</h2>
+                <h2 style = "text-align: center;">Novedades</h2>
                 <div class="slideshow-container"> 
                     <div class="mySlides_fade">
                         <img src = "elvis.jpg" style="width: 100%", style="height: 50%;">
-                        <p id = "titulo_slider"> Elvis murio en el vater</p>
+                        <p> Elvis murio en el vater</p>
                     </div>
                     <a class = "prev" onclick="plusSlides(-1)">&#10094</a>
                     <a class = "next" onclick="plusSlides(1)">&#10095</a>
                 </div>
                 <br>
             </section>
-            <section class= "clearfix">
+            <section class= "clearfix" id = "ocho_recomendaciones_estilo">
                 <img src = "elvis.jpg" style = "width: 100">
                 <img src = "elvis.jpg" style = "width: 100">
                 <img src = "elvis.jpg" style = "width: 100">
@@ -121,22 +136,27 @@
                 <img src = "elvis.jpg" style = "width: 100">
                 <img src = "elvis.jpg" style = "width: 100">
             </section>
-            <section class="clearfix", id="secciones_bajas">
-                <article id = "section_iz">
-                    <img src = "elvis.jpg" style = "width: 100">
-                    <img src = "elvis.jpg" style = "width: 100">
-                    <br>
-                    <img src = "elvis.jpg" style = "width: 100">
-                    <img src = "elvis.jpg" style = "width: 100">
-                    <br>
-                    <img src = "elvis.jpg" style = "width: 100">
-                    <img src = "elvis.jpg" style = "width: 100">
-                </article>
-                <article id = "section_de">
-                    <img src = "elvis.jpg" style = "width: 100">
-                    <img src = "elvis.jpg" style = "width: 100">
-                </article>
+        <section style="width: 100%; display: flex;">   
+            <section style="margin-left: 100px; margin-top: 30px; width: 40%;">
+                <img src = "elvis.jpg" style = "width: 100" class = ".imagen-rectangular" >
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
             </section>
+            <aside id = contenedor_imagenes_alargada>
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+                <img src = "elvis.jpg" style = "width: 100">
+                <br>
+            </aside>
+        </section> 
         </main>
         <footer> 
             <a href="pagina6.html" style="float: left; margin-left: 50px;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
