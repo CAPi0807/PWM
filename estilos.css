@@ -1,0 +1,103 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif; /* Fuente por defecto */
+    }
+    body {
+        background: linear-gradient(to right, #00ff95, #00b7ff);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0; /* Asegura que no haya márgenes */
+        padding: 0; /* Asegura que no haya relleno */
+        min-height: 100vh; /*Esto es para que siempre se cree el body ajustándose al tamaño de la pantalla*/
+        position: relative;
+        padding-bottom: 5em;
+    } 
+    #main_menu{;
+        background-color:lightblue;
+        padding: 1.25em 0.938em;
+    }
+    #main_nav li{
+        display:inline-block;
+        list-style:none ;
+        padding: 0.188em;
+        text-align: center;
+        margin-right: 3.75em;
+    }
+    .imagen_home{
+        display: inline-block;
+        width: 8%;
+    }
+    .links_header{
+        display: inline-block;
+        width: 70%;
+    }
+    .li_style_buscador{
+        display: inline-block;
+        width: 22%;
+        text-align: right;
+    }
+
+    main {
+            text-align: center;
+    }
+
+    .filtros{
+        background-color: rgb(200, 233, 200);
+        padding: 1.875em;
+        margin: 1.25em 12.5em;
+    }
+    .filtros button{
+        margin: 0em 4.375em;
+    }
+
+    footer {
+        background-color: aquamarine;
+        padding: 2em 0;
+        width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
+        bottom: 0; /*Para que vaya al final*/
+        position: absolute; /*Para que siempre este al final*/
+        text-align: center;
+        display: inline;
+    }
+    footer img {
+        width: 1.25em; /* Tamaño deseado en píxeles */
+        height: auto; /* Esto asegura que la proporción se mantenga */
+    }
+
+    .paginas_nav{
+        margin: 3.125em;
+    }
+    .paginas_nav button{
+        margin: 0.625em;
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+        background-color: rgb(71, 71, 71);
+        color: azure;
+    }
+    .CabeceraLista{
+        background-color: rgb(200, 233, 200);
+        padding: 1.875em;
+        margin: 1.25em 12.5em;
+        text-align: center;
+        display: flex;
+    }
+    .NombreLista{
+        width: 22%;
+        background-color: #00b7ff;
+        padding: 0.5em;
+    }
+    .FiltrosLista{
+        padding-top: 0.5em;
+        width: 78%;
+    }
+    .CabeceraLista button{
+        margin: 0em 4.375em;
+        background-color: rgb(0, 94, 218);
+        color: rgb(167, 167, 167);
+        width: 22%;
+        padding: 0.5em;
+        border-radius: 25%;
+    }
