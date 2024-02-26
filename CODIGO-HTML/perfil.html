@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /*estilo compartido con todas las páginas*/
         body {
             background: linear-gradient(to right, #ffcc00, #ff6600);
             background-repeat: no-repeat;
@@ -14,7 +15,7 @@
             position: relative;
             padding-bottom: 5em;
         }   
-        /*estilo compartido con todas las páginas*/
+        
         nav {
             display:inline-block;
             text-align: center;
@@ -46,7 +47,14 @@
             padding: 10px;
         }
 
-
+        main {
+            align-items: center;
+            display:inline;
+            text-align: center;
+            overflow: auto;
+            position: relative;
+        }
+        /*fin estilo compartido con todas las páginas*/
         #foto_perfil {
             display: flex;
             align-items: flex-start;
@@ -60,6 +68,12 @@
             margin-left: 50px;
             margin-right: 50px;
             text-align: left;
+        }
+        
+        .contenedor_Listas {
+            display: inline;
+            width: 100%;  
+            padding: 0 10%;
         }
 
         #orden_listas li,
@@ -117,6 +131,7 @@
             </div>
             </nav>
         </header>
+        <main>
         <section id="foto_perfil">
             <img src="imagenEjemplo.jpg" alt="nombre juego" width="20%">
             <article class="descripcion_juego">
@@ -131,12 +146,15 @@
                 <h3> autor/compañia</h3>
             </article>
         </section>
-        <section style="text-align: center; width: 100%;  padding: 0 10%;">
+        
+        <section class="contenedor_Listas ">
         <ul id="orden_listas" style="text-align: center; margin-top: 30px; background-color: green; width: 80%; ">
+            <button class="flecha_back"><-</button>
             <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista1"width="100%"></a></li>
             <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista2"width="100%"></a></li>
             <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista3"width="100%"></a></li>
             <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista4"width="100%"></a></li>
+            <button class="flecha_forward">-></button>
         </ul>
         </section>
         <div id="contendor_tres_juegos">
@@ -146,6 +164,7 @@
                 <li><img src="imagenEjemplo.jpg" alt="juego3"><p class="estilo_estrella">★</p></li>
             </ul>
         </div>
+        </main>
         <!--CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
         <footer> 
             <a href="pagina6.html" style="float: left; margin-left: 50px;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
