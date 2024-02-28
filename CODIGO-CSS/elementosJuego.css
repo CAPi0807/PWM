@@ -1,1 +1,52 @@
+#foto_perfil{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4.5%;
+    margin-top: 2%;
+}
+.descripcion_juego {
+    background: goldenrod;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 4.5%;;
+    margin-right: 4.5%;
+    text-align: left;
+}
 
+.info {
+    clear: both;
+    background: pink;
+    max-width: 95%;
+    max-height: 100%;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: flex-start;
+    overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+}
+
+table {
+    width: 100%; /* Ajusta el ancho de la tabla al 100% del contenedor */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    border: 0.1em solid black; /* Establece un borde sólido de 2px con color gris claro */
+}
+
+th, td {
+    border: 0.05em solid black; /* Establece un borde sólido de 1px con color gris claro para las celdas */
+    padding: 0.5em; /* Añade un espacio interno de 8px alrededor del contenido de las celdas */
+    text-align: left; /* Alinea el texto a la izquierda dentro de las celdas */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Aplica un color de fondo gris claro a las filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: grey; /* Aplica un color de fondo gris claro a las filas pares */
+}
+th {
+    background-color: #4CAF50; /* Color de fondo verde para las celdas de encabezado */
+    color: white; /* Texto en color blanco para las celdas de encabezado */
+}
