@@ -1,6 +1,7 @@
 <html>
     <head>
         <style>
+            /*estilo compartido con todas las páginas*/
             body {
                 background: linear-gradient(to right, #00ff95, #00b7ff);
                 background-repeat: no-repeat;
@@ -10,6 +11,13 @@
                 min-height: 100vh; /*Esto es para que siempre se cree el body ajustándose al tamaño de la pantalla*/
                 position: relative;
                 padding-bottom: 5em;
+            } 
+            main{
+                align-items: center;
+                display: inline;
+                position: relative;
+                overflow: auto;
+                text-align: center;
             }   
             nav {
                 display:inline-block;
@@ -26,7 +34,22 @@
                 width: 22%;
                 float: right;
                 margin-right: 30px;
-            }      
+            } 
+            footer {
+                background-color: aquamarine;
+                padding: 1em 0;
+                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
+                bottom: 0; /*Para que vaya al final*/
+                position: absolute; /*Para que siempre este al final*/
+                text-align: center;
+                display: inline;
+            }
+            footer img {
+                width: 2.5em; /* Tamaño deseado en píxeles */
+                height: auto; /* Esto asegura que la proporción se mantenga */
+                padding: 0.5em;
+            }     
+            /*fin estilo compartido con todas las páginas*/
 
             #section_iz{
                 display: inline;
@@ -42,47 +65,29 @@
             #secciones_bajas{
                 display: inline-block;
             }
-
-            .li_style_buscador{
-                float: right;
-            }
-            footer {
-                background-color: aquamarine;
-                padding: 1em 0;
-                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
-                bottom: 0; /*Para que vaya al final*/
-                position: absolute; /*Para que siempre este al final*/
-                text-align: center;
-                display: inline;
-            }
-            footer img {
-                width: 20px; /* Tamaño deseado en píxeles */
-                height: auto; /* Esto asegura que la proporción se mantenga */
-            }
-            .clearfix::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
             .mySlides_fade {
                 margin: auto;
                 text-align: center;
-                width: 80%;
-                height: 300px;
+                width: 70%;
+                height: 400px;
                 background-color: aqua;
-                padding-bottom: 20px;
                 position: relative;
                 z-index: 1;
             }
+            .líneaJuegos {
+                display: flex; /* Usa flexbox */
+                flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas */
+                justify-content: center;
+                width: 80%;
+                align-items: center;
+                margin: auto; /*para que este centrado*/
+            }
+            .líneaJuegos img {
+                width: 200px; /* Establece el ancho deseado para las imágenes */
+                height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+                margin: 1em 2em; /* Ajusta el margen entre las imágenes */
+            }
 
-            #titulo_slider {
-                position: absolute;
-                z-index: 2;
-            }
-            #ocho_recomendaciones_estilo{
-                text-align: center;
-            }
             #contenedor_imagenes_alargada{
                 width: 40%;
                 margin-top: 30px;
@@ -93,8 +98,7 @@
             height: 200px; /* Ajusta la altura según tus necesidades */
             object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del cuadro sin distorsión */
         }
-         
-            
+   
         </style>
 
         <title> Pagina Juegos</title>
@@ -102,7 +106,7 @@
     <body>
         <header>
             <nav>
-              <a href="pagina.html" style="float: left; margin-left: 30px;"><img src = "imagenEjemplo.jpg", width="25px">
+              <a href="pagina.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em">
               <a href="pagina6.html">link 1</a>
               <a href="pagina6.html">link 2</a>
               <a href="pagina6.html">link 3</a>
@@ -112,57 +116,57 @@
                       <input type="submit" value="Buscar">                  
               </div>
             </nav>
-          </header>
-          <main>
+        </header>
+        <main>
             <section>
-                <h2 style = "text-align: center;">Novedades</h2>
-                <div class="slideshow-container"> 
+                <h2>Novedades</h2>
                     <div class="mySlides_fade">
-                        <img src = "elvis.jpg" style="width: 100%", style="height: 50%;">
-                        <p> Elvis murio en el vater</p>
+                        <img src = "imagenEjemplo.jpg" style="width: 100%; height: 100%;">
                     </div>
                     <a class = "prev" onclick="plusSlides(-1)">&#10094</a>
                     <a class = "next" onclick="plusSlides(1)">&#10095</a>
-                </div>
-                <br>
             </section>
-            <section class= "clearfix" id = "ocho_recomendaciones_estilo">
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
-                <br>
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
+            
+            
+            <h2 style="margin-top: 3em;  margin-bottom: -16px;">Mas vistos</h2>
+            <section class="líneaJuegos">
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
+                <img src = "imagenEjemplo.jpg" >
             </section>
+
+
         <section style="width: 100%; display: flex;">   
             <section style="margin-left: 100px; margin-top: 30px; width: 40%;">
-                <img src = "elvis.jpg" style = "width: 100" class = ".imagen-rectangular" >
-                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100" class = ".imagen-rectangular" >
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
                 <br>
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
                 <br>
-                <img src = "elvis.jpg" style = "width: 100">
-                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
                 <br>
             </section>
             <aside id = contenedor_imagenes_alargada>
-                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
                 <br>
-                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
                 <br>
-                <img src = "elvis.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg" style = "width: 100">
                 <br>
             </aside>
         </section> 
         </main>
         <footer> 
-            <a href="pagina6.html" style="float: left; margin-left: 50px;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
+            <a href="pagina6.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>

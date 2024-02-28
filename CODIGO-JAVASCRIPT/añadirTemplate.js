@@ -1,4 +1,4 @@
-function añadirTemplate(url, selector) {
+function ponerTemplate(url, selector) {
     fetch(url)
         .then(response => {
             return response.text();
