@@ -1,0 +1,13 @@
+.líneaJuegos {
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas */
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    margin: auto; /*para que este centrado*/
+}
+.líneaJuegos img {
+    width: 200px; /* Establece el ancho deseado para las imágenes */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    margin: 1em 2em; /* Ajusta el margen entre las imágenes */
+}
