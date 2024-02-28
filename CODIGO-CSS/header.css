@@ -1,0 +1,16 @@
+nav {
+    display:inline-block;
+    text-align: center;
+    overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+    background-color:lightblue;
+    padding: 1em 0em;
+    width: 100%;
+}
+nav a {
+    margin-right: 100px; 
+}
+.li_style_buscador{
+    width: 22%;
+    float: right;
+    margin-right: 30px;
+} 
