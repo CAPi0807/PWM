@@ -1,0 +1,13 @@
+.info {
+    clear: both;
+    background: pink;
+    max-width: 95%;
+    max-height: 100%;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: flex-start;
+    overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+}
