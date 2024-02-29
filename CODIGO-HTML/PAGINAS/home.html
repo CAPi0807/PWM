@@ -72,32 +72,37 @@
                 height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
                 margin: 1em 2em; /* Ajusta el margen entre las imágenes */
             }
-            
-            #section_iz{
-                display: inline;
-                background-color: blue;
-                width: 30%;
-            }
-            #section_de{
-                display: inline;
-                background-color: brown;
-                width: 30%;
-            }
-
-            #secciones_bajas{
-                display: inline-block;
-            }
-
+        
             #contenedor_imagenes_alargada{
                 width: 40%;
                 margin-top: 30px;
+                margin-bottom: 30px;
                 padding: 5px;
+                border-color: black;
+                border-style: double;
             }
-            .imagen-rectangular { /*revisar como poner imagenes rectangulares*/
-            width: 600px; /* Ajusta el ancho según tus necesidades */
-            height: 200px; /* Ajusta la altura según tus necesidades */
-            object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del cuadro sin distorsión */
-        }
+            #contenedor_imagenes_alargada img{ /*revisar como poner imagenes rectangulares*/
+                width: 500px; /* Ajusta el ancho según tus necesidades */
+                height: 100px; /* Ajusta la altura según tus necesidades */
+                object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del cuadro sin distorsión */
+                padding:30px;
+            }
+            #contenedor_imagenes_destacadas{
+                width: 40%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                margin-right: 30px;
+                padding: 5px;
+                border-color: black;
+                border-style:solid;
+            }
+
+            #contenedor_imagenes_destacadas img{
+                width: 200px; /* Ajusta el ancho según tus necesidades */
+                height: 100px; /* Ajusta la altura según tus necesidades */
+                object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del cuadro sin distorsión */
+                padding:30px;
+            }
    
         </style>
 
@@ -129,6 +134,7 @@
             
             
             <h2 style="margin-top: 3em;  margin-bottom: -16px;">Mas vistos</h2>
+            <br>
             <section class="líneaJuegos">
                 <img src = "imagenEjemplo.jpg" >
                 <img src = "imagenEjemplo.jpg" >
@@ -144,33 +150,33 @@
 
 
         <section style="width: 100%; display: flex;">   
-            <section style="margin-left: 100px; margin-top: 30px; width: 40%;">
-                <img src = "imagenEjemplo.jpg" style = "width: 100" class = ".imagen-rectangular" >
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
+            <section id = contenedor_imagenes_destacadas style="margin-left: 100px; margin-top: 30px; width: 40%;">
+                <img src = "imagenEjemplo.jpg">
+                <img src = "imagenEjemplo.jpg">
                 <br>
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg">
+                <img src = "imagenEjemplo.jpg">
                 <br>
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg">
+                <img src = "imagenEjemplo.jpg">
                 <br>
             </section>
             <aside id = contenedor_imagenes_alargada>
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg">
                 <br>
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg">
                 <br>
-                <img src = "imagenEjemplo.jpg" style = "width: 100">
+                <img src = "imagenEjemplo.jpg">
                 <br>
             </aside>
         </section> 
         </main>
         <footer> 
             <a href="pagina6.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
-            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
-            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
-            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
-            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg"></a>
         </footer>
     </body>
 </html>
