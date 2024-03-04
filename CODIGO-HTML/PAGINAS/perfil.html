@@ -77,12 +77,35 @@
         }
         
         .contenedor_Listas {
-            display: inline;
+            display: flex;
+            justify-content: center; 
             width: 100%;  
-            padding: 0 10%;
+            padding: 0 2em;
+            align-items: center;
+            overflow-x: auto;
+        }
+        #orden_listas {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Cambiado para que los elementos estén en una fila */
+            align-items: center;
+            max-width: 100%
+        }
+        #orden_listas li {  
+            flex: 0 0 auto;
+            margin-top: 30px; 
+            display: flex;
+            padding: 0 2em;
+            text-align: center;
+            width: 100px;
+        }
+        #orden_listas li a img {
+            max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+            height: auto; /* Ajusta automáticamente la altura de la imagen para mantener la proporción */
         }
 
-        #orden_listas li,
+
         #orden_listas_tres_juegos li {
             list-style: none;
             display: inline-block;
@@ -154,13 +177,13 @@
         </section>
         
         <section class="contenedor_Listas ">
-        <ul id="orden_listas" style="text-align: center; margin-top: 30px; background-color: green; width: 80%; ">
-            <button class="flecha_back"><-</button>
-            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista1"width="100%"></a></li>
-            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista2"width="100%"></a></li>
-            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista3"width="100%"></a></li>
-            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista4"width="100%"></a></li>
-            <button class="flecha_forward">-></button>
+        <ul id="orden_listas">
+            <li><button class="flecha_back"><-</button></li>
+            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista1"></a></li>
+            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista2"></a></li>
+            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista3"></a></li>
+            <li><a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="lista4"></a></li>
+            <li><button class="flecha_forward">-></button>
         </ul>
         </section>
         <div id="contendor_tres_juegos">
