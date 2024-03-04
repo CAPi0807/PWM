@@ -117,11 +117,13 @@
             display: flex;
             padding: 0 2em;
             text-align: center;
-            width: 100px;
+            max-width: 100%;
+            position: relative;
         }
-        #contenedor_tres_juegos li a img {
-            max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        #contenedor_tres_juegos li img {
+            max-width: 60%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
             height: auto; /* Ajusta automáticamente la altura de la imagen para mantener la proporción */
+            position: relative;
         }
 
         
@@ -131,6 +133,11 @@
             color: yellow; /* Color amarillo para la estrella */
             text-shadow: 1px 1px 5px #fff; /* Efecto de sombra para un brillo */
             font-size: 30px;
+            position: absolute;
+            left: 50%; 
+            bottom: 0;
+            transform: translateX(-50%);
+            display: block;
         }
         </style>
         <title>Descripción Juego</title>
