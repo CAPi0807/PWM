@@ -93,6 +93,7 @@
             }
             footer {
                 background-color: aquamarine;
+                padding: 2em 0;
                 padding: 1em 0;
                 width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
                 bottom: 0; /*Para que vaya al final*/
@@ -100,30 +101,12 @@
                 text-align: center;
                 display: inline;
             }
-        
+
             footer img {
+                width: 1.25em; /* Tamaño deseado en píxeles */
                 width: 40px; /* Tamaño deseado en píxeles */
                 height: auto; /* Esto asegura que la proporción se mantenga */
                 padding: 10px;
-            }
-            .lista {
-                position: relative;
-                text-align: center;
-                margin-bottom: 50px;
-            }
-
-            .lista p{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: rgb(102, 0, 133);
-                font-size:xx-large;
-            }
-
-            .lista img{
-                width: 900px;
-                height: 150px;
             }
 
         </style>
@@ -131,6 +114,7 @@
     <body>
         <header>
             <nav>
+              <a href="pagina.html" style="float: left; margin-left: 30px;"><img src = "imagenEjemplo.jpg", width="25px">
               <a href="pagina.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em">
               <a href="pagina6.html">link 1</a>
               <a href="pagina6.html">link 2</a>
@@ -150,38 +134,30 @@
                     <button>Filtro 2</button>
                 </div>
             </section>
-            <section class= "listas">
-                <div class = "lista">
-                    <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg">
-                    <p>Nombre lista</p>
-                    <br>
-                </div>
-                <div class = "lista">
-                    <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg">
-                    <p>Nombre lista</p>
-                    <br>
-                </div>
-                <div class = "lista">
-                    <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg">
-                    <p>Nombre lista</p>
-                    <br>
-                </div>
-                <div class = "lista">
-                    <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg">
-                    <p>Nombre lista</p>
-                    <br>
-                </div>
-                <div class = "lista">
-                    <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg">
-                    <p>Nombre lista</p>
-                    <br>
-                </div>
-                <div class = "lista">
-                    <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg">
-                    <p>Nombre lista</p>
-                    <br>
-                </div>
-                
+            <section class= "clearfix">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <br>
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <br>
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <br>
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
+                <img src = "eula-genshin-impact-desktop-wallpaperwaifu.com_Moment.jpg" style = "width: 200">
             </section>
             <div class="paginas_nav">
                 <button class="flecha_back"><-</button>
@@ -192,6 +168,7 @@
                 <button class="flecha_forward">-></button>
         </main>
         <footer> 
+            <a href="pagina6.html" style="float: left; margin-left: 50px;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
             <a href="pagina6.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
