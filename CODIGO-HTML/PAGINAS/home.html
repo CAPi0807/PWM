@@ -75,33 +75,37 @@
         
             #contenedor_imagenes_alargada{
                 width: 40%;
+                max-height: 40%;
                 margin-top: 30px;
                 margin-bottom: 30px;
                 padding: 5px;
                 border-color: black;
                 border-style: double;
             }
-            #contenedor_imagenes_alargada img{ /*revisar como poner imagenes rectangulares*/
-                width: 500px; /* Ajusta el ancho según tus necesidades */
-                height: 100px; /* Ajusta la altura según tus necesidades */
-                object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del cuadro sin distorsión */
-                padding:30px;
+            #contenedor_imagenes_alargada img{ 
+                width: 80%; 
+                max-height: 200px;
+                object-fit: cover; 
+                padding: 30px;
             }
             #contenedor_imagenes_destacadas{
                 width: 40%;
+                                max-height: 40%;
+
                 margin-top: 30px;
                 margin-bottom: 30px;
                 margin-right: 30px;
                 padding: 5px;
                 border-color: black;
                 border-style:solid;
+                display: inline-block;
             }
 
             #contenedor_imagenes_destacadas img{
-                width: 200px; /* Ajusta el ancho según tus necesidades */
-                height: 100px; /* Ajusta la altura según tus necesidades */
-                object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del cuadro sin distorsión */
-                padding:30px;
+                width: 40%; 
+                max-height: 200px;
+                object-fit: cover; 
+                padding: 30px 15px;
             }
    
         </style>
@@ -111,8 +115,8 @@
     <body>
         <header>
             <nav>
-              <a href="pagina.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em">
-              <a href="pagina6.html">link 1</a>
+              <a href="home.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em">
+              <a href="perfil.html">Perfil</a>
               <a href="pagina6.html">link 2</a>
               <a href="pagina6.html">link 3</a>
               <a href="pagina6.html">link 4</a>
@@ -149,8 +153,8 @@
             </section>
 
 
-        <section style="width: 100%; display: flex;">   
-            <section id = contenedor_imagenes_destacadas style="margin-left: 100px; margin-top: 30px; width: 40%;">
+        <section style="width: 100%; display: flex;" >   
+            <section id = contenedor_imagenes_destacadas style="margin-left: 100px; margin-top: 30px; ">
                 <img src = "imagenEjemplo.jpg">
                 <img src = "imagenEjemplo.jpg">
                 <br>
@@ -163,11 +167,10 @@
             </section>
             <aside id = contenedor_imagenes_alargada>
                 <img src = "imagenEjemplo.jpg">
-                <br>
+                
                 <img src = "imagenEjemplo.jpg">
-                <br>
+                
                 <img src = "imagenEjemplo.jpg">
-                <br>
             </aside>
         </section> 
         </main>
