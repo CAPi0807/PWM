@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>footer</title>
+    <link href="/CODIGO-CSS/lista_alargada_imagen.css" rel="stylesheet">
+</head>
+    <body>
+    <section class= "listas">
+                <div class = "lista">
+                    <img src = "imagenEjemplo.jpg">
+                    <p>Nombre lista</p>
+                    <br>
+                </div>
+    </body>
+</html>
