@@ -1,0 +1,24 @@
+.CabeceraLista{
+    background-color: rgb(200, 233, 200);
+    padding: 1.875em;
+    margin: 1.25em 12.5em;
+    text-align: center;
+    display: flex;
+}
+.NombreLista{
+    width: 22%;
+    background-color: #00b7ff;
+    padding: 0.5em;
+}
+.FiltrosLista{
+    padding-top: 0.5em;
+    width: 78%;
+}
+.CabeceraLista button{
+    margin: 0em 4.375em;
+    background-color: rgb(0, 94, 218);
+    color: rgb(167, 167, 167);
+    width: 22%;
+    padding: 0.5em;
+    border-radius: 25%;
+}

@@ -1,0 +1,11 @@
+.paginas_nav{
+    margin: 3.125em;
+}
+.paginas_nav button{
+    margin: 0.625em;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    background-color: rgb(71, 71, 71);
+    color: azure;
+}

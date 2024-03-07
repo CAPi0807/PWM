@@ -1,0 +1,8 @@
+.filtros{
+    background-color: rgb(200, 233, 200);
+    padding: 1.875em;
+    margin: 1.25em 12.5em;
+}
+.filtros button{
+    margin: 0em 4.375em;
+}
