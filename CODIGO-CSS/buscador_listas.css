@@ -1,0 +1,21 @@
+.CabeceraLista{
+    background-color: rgb(200, 233, 200);
+    padding: 1.875em;
+    margin: 1.25em 17em;
+    text-align: center;
+    display: flex;
+}
+.NombreLista{
+    width: 22%;
+    background-color: #00b7ff;
+    padding: 0.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#buscalistas{
+    margin-left: 380px;
+    display: inline-flex;
+    width: 22%;
+    float: right;
+    margin-right: 30px;
+}
