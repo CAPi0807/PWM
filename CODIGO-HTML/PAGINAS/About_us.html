@@ -7,7 +7,7 @@
     </head>
     <style>
         body {
-            background: linear-gradient(to right, #00ff95, #00b7ff);
+            background: linear-gradient(to right, #40c48d, #00b7ff);
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0; /* Asegura que no haya márgenes */
@@ -56,15 +56,19 @@
         }
         #imagenes_descripcion{
             display: flex;
+            justify-content: center;
             margin-left: 370px;
             margin-right: 370px;
             padding: 15px;
-            background-color: blue;
+        }
+
+        #imagenes_descripcion img{
+            width: 10em;
+            height: 10em;
         }
 
         #imagenes_descripcion div{
-            width: 50%;
-            vertical-align: middle;
+            text-align: center;
         }
 
         #imagen_alargada{
@@ -82,17 +86,17 @@
     <body>
         <header>
             <nav>
-              <a href="home.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em">
-              <a href="perfil.html">Perfil</a>
-              <a href="Log_in.html">Log In</a>
-              <a href="Listas.html">Mis Listas</a>
-              <a href="About_Us.html">About Us</a>
-              <div class = "li_style_buscador">
-                  Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
-                      <input type="submit" value="Buscar">                  
-              </div>
+                <a href="home.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em">
+                <a href="perfil.html">Perfil</a>
+                <a href="Log_in.html">Log In</a>
+                <a href="Listas.html">Mis Listas</a>
+                <a href="About_Us.html">About Us</a>
+                <div class = "li_style_buscador">
+                    Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
+                        <input type="submit" value="Buscar">                  
+                </div>
             </nav>
-          </header>
+        </header>
         <main>
             <h1 style="text-align: center;">¿Quienes Somos?</h1>
             <section id = texto_style>
@@ -109,11 +113,11 @@
             <article id = imagenes_descripcion>
                 <div> 
                     <img src = "imagenEjemplo.jpg">
-                    <p> texto que aacompña a la imagen</p>
+                    <p> texto que acompaña a la imagen</p>
                 </div>
-                <div style="margin-left: 20%;">
+                <div style="margin-left: 20em;">
                     <img src = "imagenEjemplo.jpg">
-                    <p> texto que aacompña a la imagen</p>
+                    <p> texto que acompaña a la imagen</p>
                 </div>
             </article>
             <section id = imagen_alargada>
@@ -121,7 +125,7 @@
             </section>
         </main>
         <footer> 
-            <a href="home.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
+            <a href="pagina6.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
             <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
