@@ -40,21 +40,19 @@
                 float: right;
                 margin-right: 30px;
             }
-            .imagen_home{
-                display: inline-block;
-                width: 8%;
+            footer {
+                background-color: aquamarine;
+                padding: 1em 0;
+                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
+                bottom: 0; /*Para que vaya al final*/
+                position: absolute; /*Para que siempre este al final*/
+                text-align: center;
+                display: inline;
             }
-            .links_header{
-                display: inline-block;
-                width: 70%;
-            }
-            .li_style_buscador{
-                display: inline-block;
-                width: 22%;
-                text-align: right;
-            }
-            main {
-                    text-align: center;
+            footer img {
+                width: 2.5em; /* Tamaño deseado en píxeles */
+                height: auto; /* Esto asegura que la proporción se mantenga */
+                padding: 0.5em;
             }
             .CabeceraLista{
                 background-color: rgb(200, 233, 200);
@@ -91,24 +89,19 @@
                 background-color: rgb(71, 71, 71);
                 color: azure;
             }
-            footer {
-                background-color: aquamarine;
-                padding: 2em 0;
-                padding: 1em 0;
-                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
-                bottom: 0; /*Para que vaya al final*/
-                position: absolute; /*Para que siempre este al final*/
-                text-align: center;
-                display: inline;
+            .líneaJuegos {
+                display: flex; /* Usa flexbox */
+                flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas */
+                justify-content: center;
+                width: 80%;
+                align-items: center;
+                margin: auto; /*para que este centrado*/
             }
-
-            footer img {
-                width: 1.25em; /* Tamaño deseado en píxeles */
-                width: 40px; /* Tamaño deseado en píxeles */
-                height: auto; /* Esto asegura que la proporción se mantenga */
-                padding: 10px;
+            .líneaJuegos img {
+                width: 200px; /* Establece el ancho deseado para las imágenes */
+                height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+                margin: 1em 2em; /* Ajusta el margen entre las imágenes */
             }
-
         </style>
     </head>
     <body>
@@ -133,7 +126,7 @@
                     <button>Filtro 2</button>
                 </div>
             </section>
-            <section class= "clearfix">
+            <section class= "líneaJuegos">
                 <img src = "imagenEjemplo.jpg" style = "width: 200">
                 <img src = "imagenEjemplo.jpg" style = "width: 200">
                 <img src = "imagenEjemplo.jpg" style = "width: 200">
@@ -159,12 +152,13 @@
                 <img src = "imagenEjemplo.jpg" style = "width: 200">
             </section>
             <div class="paginas_nav">
-                <button class="flecha_back"><-</button>
+                <button ><-</button>
                 <button>Botón 1</button>
                 <button>Botón 2</button>
                 <button>Botón 3</button>
                 <button>Botón 4</button>
-                <button class="flecha_forward">-></button>
+                <button >-></button>
+            </div>    
         </main>
         <footer> 
             <a href="home.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
