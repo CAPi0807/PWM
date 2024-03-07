@@ -1,0 +1,19 @@
+#contenedor_imagenes_destacadas{
+    width: 40%;
+    max-height: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 100px; 
+    padding: 5px;
+    border-color: black;
+    border-style:solid;
+    display: inline-block;
+}
+
+#contenedor_imagenes_destacadas img{
+    width: 40%; 
+    max-height: 200px;
+    object-fit: cover; 
+    padding: 30px 15px;
+}
