@@ -17,6 +17,10 @@
             padding-bottom: 5em;
         }
 
+        main{
+            vertical-align: middle;
+        }
+
         footer {
             background-color: aquamarine;
             padding: 1em 0;
@@ -53,8 +57,16 @@
         #imagenes_descripcion{
             display: flex;
             margin-left: 370px;
+            margin-right: 370px;
             padding: 15px;
+            background-color: blue;
         }
+
+        #imagenes_descripcion div{
+            width: 50%;
+            vertical-align: middle;
+        }
+
         #imagen_alargada{
             text-align: center  ;
         }
@@ -84,18 +96,25 @@
         <main>
             <h1 style="text-align: center;">¿Quienes Somos?</h1>
             <section id = texto_style>
-                <p>info sobre nosotros</p>
+                <p>info sobre nosotros ----------------------------------------------------
+                    <br>
+                    -----------------------------------------------------------------------
+                    <br>
+                    -----------------------------------------------------------------------
+                    <br>
+                    -----------------------------------------------------------------------
+                </p>
             </section>
             <h2 style="text-align: center;"> Crea tu lista</h2>
             <article id = imagenes_descripcion>
-                <section> 
+                <div> 
                     <img src = "imagenEjemplo.jpg">
                     <p> texto que aacompña a la imagen</p>
-                </section>
-                <section style="margin-left: 100px;"> 
+                </div>
+                <div style="margin-left: 20%;">
                     <img src = "imagenEjemplo.jpg">
                     <p> texto que aacompña a la imagen</p>
-                </section>
+                </div>
             </article>
             <section id = imagen_alargada>
                 <img src = "imagenEjemplo.jpg">
