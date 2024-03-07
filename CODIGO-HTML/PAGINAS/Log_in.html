@@ -59,33 +59,38 @@
     }
 
     button:hover {
-        background-color: #45a049;
-    }
-
-    .A_registrarse{
-        vertical-align: middle;
+        background-color: #00ccff;
     }
 
     .A_registrarse button{
         background-color: #45a049;
     }
+
+    .A_registrarse button:hover{
+        background-color: #8eff93;
+    }
     </style>
     <body>
         <main>
             <div class="login-container">
-                <h1>Registro</h1>
+                <h1>Iniciar Sesión</h1>
                 <form action="#" method="post">
-                    <label for="password">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
 
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
 
-                    <button type="submit">Registrarme</button>
+                    <button type="submit">Iniciar Sesión</button>
                 </form>
+            </div>
+            <div class="A_registrarse">
+                <p>
+                    ¿No tienes cuenta?
+                </p>
+                <button>
+                    Regístrate
+                </button>
             </div>
         </main>
     </body>
