@@ -1,0 +1,34 @@
+    
+        .contenedor_Listas {
+            display: flex;
+            justify-content: center; 
+            width: 90%;  
+            padding: 0 2em;
+            align-items: center;
+        }
+        #orden_listas {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Cambiado para que los elementos estén en una fila */
+            align-items: center;
+            max-width: 100%
+        }
+        #orden_listas li {  
+            flex: 0 0 auto;
+            margin-top: 30px; 
+            display: flex;
+            padding: 0 2em;
+            text-align: center;
+            width: 200px;
+        }
+        #orden_listas li a img {
+            max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+            height: auto; /* Ajusta automáticamente la altura de la imagen para mantener la proporción */
+        }
+        .filtros{
+            background-color: rgb(200, 233, 200);
+            padding: 1.875em;
+            margin: 1em 12.5em;
+            height: 5px;
+        }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Inicio de Sesión</title>
+    </head>
+    <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        background-color: #17b5dc;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    input {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #008cff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #00ccff;
+    }
+
+    .A_registrarse button{
+        background-color: #45a049;
+    }
+
+    .A_registrarse button:hover{
+        background-color: #8eff93;
+    }
+    </style>
+    <body>
+        <main>
+            <div class="login-container">
+                <h1>Iniciar Sesión</h1>
+                <form action="#" method="post">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+            <div class="A_registrarse">
+                <p >
+                    ¿No tienes cuenta? <a href = sing_in.html>Regístrate</a>
+                </p>
+            </div>
+        </main>
+    </body>
+</html>

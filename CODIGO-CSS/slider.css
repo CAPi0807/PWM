@@ -1,0 +1,14 @@
+.mySlides_fade {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    height: 400px;
+    background-color: aqua;
+    position: relative;
+    z-index: 1;
+}
+
+.mySlides_fade img{
+    width: 100%; 
+    height: 100%;
+} 

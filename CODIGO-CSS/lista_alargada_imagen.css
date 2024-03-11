@@ -1,0 +1,19 @@
+.lista {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.lista p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(102, 0, 133);
+    font-size:xx-large;
+}
+
+.lista img{
+    width: 900px;
+    height: 150px;
+}

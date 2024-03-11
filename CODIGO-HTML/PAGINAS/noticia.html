@@ -18,38 +18,28 @@
                 overflow: auto;
                 text-align: center;
             } 
-            #main_menu{
-                background-color:lightblue;
-                padding: 20px 15px;
-                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
-            }
-            #main_nav li{
+            nav {
                 display:inline-block;
-                list-style:none ;
-                padding: 3px;
                 text-align: center;
-                margin-right: 60px;
                 overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
+                background-color:lightblue;
+                padding: 1em 0em;
+                width: 100%;
             }
-            .imagen_home{
-                display: inline-block;
-                width: 8%;
-            }
-            .links_header{
-                display: inline-block;
-                width: 70%;
+            nav a {
+                margin-right: 100px; 
             }
             .li_style_buscador{
-                display: inline-block;
                 width: 22%;
-                text-align: right;
-            }
-            main{
-                text-align: center;
-            }
-            #imagen_central{
+                float: right;
+                margin-right: 30px;
+            } 
+
+ 
+            #imagen_central img{
                 width:80%;
                 height: 300px;
+                
             }
             footer {
                 background-color: aquamarine;
@@ -70,25 +60,25 @@
         <title> Pagina Juegos</title>
     </head>
     <body>
-        <header id = "main_menu">
-            <nav id = "main_nav">
-                <a class="imagen home"href="pagina.html"><img src = "imagenEjemplo.jpg", width="25px" >
-                <ul class="links_header">
-                    <li> <a href="pagina6.html">link 1</a></li>
-                    <li> <a href="pagina6.html">link 2</a></li>
-                    <li> <a href="pagina6.html">link 3</a></li>
-                    <li> <a href="pagina6.html">link 4</a></li>
-                </ul>
-                <div class = "li_style_buscador">
-                    Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
-                        <input type="submit" value="Buscar">                  
-                </div>    
+        <header>
+            <nav>
+              <a href="home.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em">
+              <a href="perfil.html">Perfil</a>
+              <a href="Log_in.html">Log In</a>
+              <a href="Listas.html">Mis Listas</a>
+              <a href="About_Us.html">About Us</a>
+              <div class = "li_style_buscador">
+                  Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
+                      <input type="submit" value="Buscar">                  
+              </div>
             </nav>
-        </header>
+          </header>
         <main>
             <h1>Titulo de la noticia</h1>
             <p><h2>Breve resumen de la noticia</h2></p>
-            <img id = "imagen_central" src="imagenEjemplo.jpg">
+            <div id = "imagen_central">
+                <img src="imagenEjemplo.jpg">
+            </div>
             <section>
                 <p style="text-align: justify; margin-inline: 150px;">
                     Título: Innovación Tecnológica Revoluciona la Industria Automotriz
@@ -113,14 +103,12 @@
             </section>
             <p><h3 style="text-align: right; margin-right: 30px;"> fecha y autor</h3></p>
         </main>
-            <!--CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
-            <footer> 
-                <a href="pagina6.html" style="float: left; margin-left: 50px;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
-                <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
-                <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
-            </footer>
-            <!--FIN CONTENIDO COMÚN AL RESTO DE PÁGINAS-->
+        <footer> 
+            <a href="home.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+            <a href="pagina6.html"><img src="imagenEjemplo.jpg" alt="Paisaje"></a>
+        </footer>
     </body>
 </html>

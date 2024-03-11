@@ -40,44 +40,46 @@
                 float: right;
                 margin-right: 30px;
             }
-            footer {
-                background-color: aquamarine;
-                padding: 1em 0;
-                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
-                bottom: 0; /*Para que vaya al final*/
-                position: absolute; /*Para que siempre este al final*/
-                text-align: center;
-                display: inline;
+            .imagen_home{
+                display: inline-block;
+                width: 8%;
             }
-            footer img {
-                width: 2.5em; /* Tamaño deseado en píxeles */
-                height: auto; /* Esto asegura que la proporción se mantenga */
-                padding: 0.5em;
+            .links_header{
+                display: inline-block;
+                width: 70%;
+            }
+            .li_style_buscador{
+                display: inline-block;
+                width: 22%;
+                text-align: right;
+            }
+            main {
+                    text-align: center;
             }
             .CabeceraLista{
                 background-color: rgb(200, 233, 200);
                 padding: 1.875em;
-                margin: 1.25em 12.5em;
+                margin: 1.25em 17em;
                 text-align: center;
                 display: flex;
             }
+            
             .NombreLista{
                 width: 22%;
                 background-color: #00b7ff;
                 padding: 0.5em;
+                margin-left: 100px;
+                margin-right: 100px;
             }
-            .FiltrosLista{
-                padding-top: 0.5em;
-                width: 78%;
-            }
-            .CabeceraLista button{
-                margin: 0em 4.375em;
-                background-color: rgb(0, 94, 218);
-                color: rgb(167, 167, 167);
+            
+            #buscalistas{
+                margin-left: 380px;
+                display: inline-flex;
                 width: 22%;
-                padding: 0.5em;
-                border-radius: 25%;
+                float: right;
+                margin-right: 30px;
             }
+
             .paginas_nav{
                 margin: 3.125em;
             }
@@ -89,19 +91,41 @@
                 background-color: rgb(71, 71, 71);
                 color: azure;
             }
-            .líneaJuegos {
-                display: flex; /* Usa flexbox */
-                flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas */
-                justify-content: center;
-                width: 80%;
-                align-items: center;
-                margin: auto; /*para que este centrado*/
+            footer {
+                background-color: aquamarine;
+                padding: 1em 0;
+                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
+                bottom: 0; /*Para que vaya al final*/
+                position: absolute; /*Para que siempre este al final*/
+                text-align: center;
+                display: inline;
             }
-            .líneaJuegos img {
-                width: 200px; /* Establece el ancho deseado para las imágenes */
-                height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-                margin: 1em 2em; /* Ajusta el margen entre las imágenes */
+        
+            footer img {
+                width: 40px; /* Tamaño deseado en píxeles */
+                height: auto; /* Esto asegura que la proporción se mantenga */
+                padding: 10px;
             }
+            .lista {
+                position: relative;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .lista p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(102, 0, 133);
+                font-size:xx-large;
+            }
+
+            .lista img{
+                width: 900px;
+                height: 150px;
+            }
+
         </style>
     </head>
     <body>
@@ -120,45 +144,52 @@
           </header>
         <main>
             <section class="CabeceraLista">
-                <p class="NombreLista">Nombre de la lista</p>
-                <div class="FiltrosLista">
-                    <button>Filtro 1</button>
-                    <button>Filtro 2</button>
+                <p class="NombreLista">Tus Listas</p>
+                <div id="buscalistas">
+                    <p>Buscar Lista: </p><input type="search" name="busquedalista" placeholder="Lista 1...">
+                        <input type="submit" value="Buscar">                  
                 </div>
             </section>
-            <section class= "líneaJuegos">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <br>
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <br>
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <br>
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
-                <img src = "imagenEjemplo.jpg" style = "width: 200">
+            <section>
+                <div class = "lista">
+                    <img src = "imagenEjemplo.jpg">
+                    <p>Nombre lista</p>
+                    <br>
+                </div>
+                <div class = "lista">
+                    <img src = "imagenEjemplo.jpg">
+                    <p>Nombre lista</p>
+                    <br>
+                </div>
+                <div class = "lista">
+                    <img src = "imagenEjemplo.jpg">
+                    <p>Nombre lista</p>
+                    <br>
+                </div>
+                <div class = "lista">
+                    <img src = "imagenEjemplo.jpg">
+                    <p>Nombre lista</p>
+                    <br>
+                </div>
+                <div class = "lista">
+                    <img src = "imagenEjemplo.jpg">
+                    <p>Nombre lista</p>
+                    <br>
+                </div>
+                <div class = "lista">
+                    <img src = "imagenEjemplo.jpg">
+                    <p>Nombre lista</p>
+                    <br>
+                </div>
+                
             </section>
             <div class="paginas_nav">
-                <button ><-</button>
+                <button class="flecha_back"><-</button>
                 <button>Botón 1</button>
                 <button>Botón 2</button>
                 <button>Botón 3</button>
                 <button>Botón 4</button>
-                <button >-></button>
-            </div>    
+                <button class="flecha_forward">-></button>
         </main>
         <footer> 
             <a href="home.html" style="float: left; margin-left: 3.1em; margin-right: -3.1em;"><img src="imagenEjemplo.jpg" alt="Paisaje"></a> 

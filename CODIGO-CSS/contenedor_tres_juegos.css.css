@@ -1,0 +1,36 @@
+.contenedor_Listas {
+    display: flex;
+    justify-content: center; 
+    width: 90%;  
+    padding: 0 2em;
+    align-items: center;
+}
+#contenedor_tres_juegos {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    max-width: 100%
+}
+#contenedor_tres_juegos li {  
+    margin-top: 30px; 
+    display: flex;
+    padding: 0 2em;
+    width: 200px;
+}
+#contenedor_tres_juegos li img {
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: width*3;
+}
+#contenedor_tres_juegos li div{
+    vertical-align: middle;
+}
+
+.estilo_estrella{
+    top: 0;
+    right: 0;
+    color: yellow; /* Color amarillo para la estrella */
+    text-shadow: 1px 1px 5px #fff; /* Efecto de sombra para un brillo */
+    font-size: 30px;
+    display: inline-block;
+    padding: 5px;
+}
