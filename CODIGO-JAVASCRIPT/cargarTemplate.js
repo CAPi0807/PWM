@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 async function cargarEstructura() {
-    document.appendChild(await cargarTemplate('../CODIGO-HTML/TEMPLATES/Header/header.html'));
-    document.appendChild(await cargarTemplate('../CODIGO-HTML/TEMPLATES/Footer/footer.html'));
+    document.body.appendChild(await cargarTemplate('../CODIGO-HTML/TEMPLATES/Header/header.html'));
+    document.body.appendChild(await cargarTemplate('../CODIGO-HTML/TEMPLATES/Footer/footer.html'));
 
 }
 
