@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function() {
     await cargarEstructura();
     // Dado que cargarEstructura es async, ahora puedes asegurarte de que todo ha cargado
+    cargarContenidoDinamico();
 });
 
 async function cargarEstructura() {
@@ -16,4 +17,23 @@ async function cargarTemplate(url) {
     let template = document.createElement('template');
     template.innerHTML = text;
     return document.importNode(template.content, true);
+}
+
+function cargarContenidoDinamico() {
+    // Ahora esta función no recibe mainContent, ya que buscará en el DOM actualizado
+    fetch('data/content.json')
+        .then(response => response.json())
+        .then(data => {
+            let dynamicContentSection = document.querySelector('#dynamicContent');
+            if (!dynamicContentSection) {
+                console.error('No se encontró #dynamicContent en el DOM');
+                return;
+            }
+            data.forEach(item => {
+                let article = document.createElement('article');
+                article.innerHTML = `<h2>${item.title}</h2><p>${item.description}</p>`;
+                dynamicContentSection.appendChild(article);
+            });
+        })
+        .catch(error => console.error('Error:', error));
 }
