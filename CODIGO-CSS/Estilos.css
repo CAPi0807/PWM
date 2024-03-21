@@ -189,7 +189,7 @@ main{
 }
 #contenedor_tres_juegos li img {
     max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-    height: width*3;
+    height: 60px;
 }
 #contenedor_tres_juegos li div{
     vertical-align: middle;
@@ -333,12 +333,11 @@ th {
 
 #imagenes_descripcion{
     display: flex;
-    justify-content: space-between;
-    margin-left: 23.125em;
-    margin-right: 23.125em;
+    justify-content: space-evenly;
+    margin-left: 20em;
+    margin-right: 20em;
     margin-bottom: 5em;
     margin-top: 2.5em;
-    padding: 0px 10em;
 }
 
 #imagenes_descripcion img{
@@ -347,7 +346,6 @@ th {
 }
 
 #imagenes_descripcion div{
-    width: 50;
     vertical-align: middle;
     text-align: center;
 }
