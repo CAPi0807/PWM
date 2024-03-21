@@ -111,6 +111,14 @@
                 padding: 30px 15px;
             }
    
+            .prev {
+                left: 0; /* Alinea a la izquierda */
+            }
+
+            /* Estilo del botón de dirección derecha */
+            .next {
+                right: 0; /* Alinea a la derecha */
+            }
         </style>
 
         <title> Pagina Juegos</title>
@@ -136,8 +144,8 @@
                     <div class="mySlides_fade">
                         <img src = "imagenEjemplo.jpg">
                     </div>
-                    <a class = "prev" onclick="moveCarousel(-1)">&#10094</a>
-                    <a class = "next" onclick="moveCarousel(1)">&#10095</a>
+                    <div class = "prev" onclick="moveCarousel(-1)">❮</div>
+                    <div class = "next" onclick="moveCarousel(1)">❯</div>
             </section>
             
             
@@ -184,6 +192,12 @@
             <a href="pagina6.html"><img src="imagenEjemplo.jpg"></a>
             <a href="pagina6.html"><img src="imagenEjemplo.jpg"></a>
             <a href="pagina6.html"><img src="imagenEjemplo.jpg"></a>
-        </footer>
+        </footer> 
+        <script>
+            document.addEventListener('DOMContentLoaded', async function() {
+                initCarousel('mySlides_fade');
+                // Otro código necesario
+            });
+        </script>
     </body>
 </html>
