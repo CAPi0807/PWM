@@ -42,7 +42,7 @@ padding: 10px;
 }
 
 body {
-    background: linear-gradient(to right, #00ff95, #00b7ff);
+    background: linear-gradient(to left, #47cc7a, #2d3032);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0; /* Asegura que no haya márgenes */
@@ -76,7 +76,6 @@ main{
 
 .info {
     clear: both;
-    background: pink;
     max-width: 95%;
     max-height: 100%;
     margin-top: 1.2em;
