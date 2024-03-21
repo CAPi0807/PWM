@@ -1,16 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
-    display:inline-block;
-    text-align: center;
+    display:flex;
+    align-items: center;
     overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
     background-color:lightblue;
     padding: 1em 0em;
     width: 100%;
 }
 nav a {
-    margin-right: 100px; 
+    margin-right: 200px;
+    text-decoration: none;
 }
+
+#logo{
+    float: left;
+    margin-left: 0.5em;
+}
+
 .li_style_buscador{
-    width: 22%;
     float: right;
     margin-right: 30px;
 }
@@ -55,7 +66,12 @@ main{
     margin: 1.25em 12.5em;
 }
 .filtros button{
-    margin: 0em 4.375em;
+    margin: 0em 5em;
+    border-radius: 20%;
+    width: 14em;
+    height: 4.5em;
+    color: aliceblue;
+    background-color: #006eff;
 }
 
 .info {
@@ -122,6 +138,15 @@ main{
     padding: 0 2em;
     align-items: center;
 }
+
+.contenedor_Listas button{
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    background-color: rgb(71, 71, 71);
+    color: azure;
+}
+
 #orden_listas {
     list-style: none;
     padding: 0;
@@ -196,17 +221,19 @@ main{
 
 #foto_perfil{
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     margin-left: 4.5%;
     margin-top: 2%;
+    height:max-content;
 }
 .descripcion_juego {
-    background: goldenrod;
+    background: rgb(192, 251, 255);
     width: 100%;
     max-width: 100%;
     margin-left: 4.5%;;
     margin-right: 4.5%;
     text-align: left;
+    flex: 1;
 }
 
 #contenedor_imagenes_destacadas{
@@ -302,4 +329,93 @@ tr:nth-child(odd) {
 th {
     background-color: #4CAF50; /* Color de fondo verde para las celdas de encabezado */
     color: white; /* Texto en color blanco para las celdas de encabezado */
+}
+
+#imagenes_descripcion{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 23.125em;
+    margin-right: 23.125em;
+    margin-bottom: 5em;
+    margin-top: 2.5em;
+    padding: 0px 10em;
+}
+
+#imagenes_descripcion img{
+    width: 15em;
+    height: 15em;
+}
+
+#imagenes_descripcion div{
+    width: 50;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#segunda_imagen{
+    margin-left: 6em;
+}
+
+#Mas_listas{
+    margin: 2em 5em;
+    border-radius: 20%;
+    width: 14em;
+    height: 4.5em;
+    color: aliceblue;
+    background-color: #006eff;
+}
+
+/*RESPONSIVE Tablet*/
+@media(max-width: 992px){
+
+    nav a {
+        margin-right: 65px; 
+    }
+
+    .li_style_buscador{
+        float: right;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .li_style_buscador input{
+        display: flex;
+        align-items: center;
+    }
+
+    .líneaJuegos {
+        width: 90%;
+    }
+
+    .filtros{
+        padding: 1em;
+        margin: 1.1em 10em;
+    }
+    
+    .filtros button{
+        margin: 0em 2em;
+        border-radius: 20%;
+        width: 6.5em;
+        height: 3.5em;
+        color: aliceblue;
+        background-color: #006eff;
+    }
+
+    #imagenes_descripcion{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 4em;
+        margin-top: 2em;
+        padding: 0px 10em;
+    }
+
+    #contenedor_tres_juegos li {  
+        margin-top: 20px; 
+        display: flex;
+        padding: 0 1em;
+        width: 150px;
+    }
+
 }
