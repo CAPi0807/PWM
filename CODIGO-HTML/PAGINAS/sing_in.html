@@ -62,10 +62,6 @@
         background-color: #45a049;
     }
 
-    .A_registrarse{
-        vertical-align: middle;
-    }
-
     .A_registrarse button{
         background-color: #45a049;
     }
@@ -75,14 +71,15 @@
             <div class="login-container">
                 <h1>Registro</h1>
                 <form action="#" method="post">
-                    <label for="password">Correo electrónico:</label>
+                    <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" required>
-
+                    /*Meterle que solo acepte si tien @gmail.com */
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
 
                     <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password"  required>
+                    /*Meterle que solo acepte si tiene minimo 6 caracteres */
 
                     <button type="submit">Registrarme</button>
                 </form>
