@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
@@ -81,7 +81,7 @@
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
 
-                    <button type="submit" id="botonSignUp">Iniciar Sesión</button>
+                    <button type="submit" id="buttonSignUp">Iniciar Sesión</button>
                 </form>
             </div>
             <div class="A_registrarse">
@@ -91,15 +91,15 @@
             </div>
         </main>
         <script>
-            function cargarUsuario() {
-                let usuario = document.getElementById('username').value
-                let contraseña = document.getElementById('password').value 
-
+            function loadUser() {
+                const user = document.getElementById('username').value
+                const password = document.getElementById('password').value
+                console.log(password +" " + user);
                 /* es*/
   
             }
             
-            document.getElementById("botonSignUp").addEventListener('submit',cargarUsuario)
+            document.getElementById("buttonSignUp").addEventListener('submit',loadUser)
         </script>
     </body>
 </html>
