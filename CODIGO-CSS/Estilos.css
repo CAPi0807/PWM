@@ -82,8 +82,7 @@ main{
     margin-bottom: 1.2em;
     margin-left: 5%;
     margin-right: 5%;
-    display: flex;
-    align-items: flex-start;
+    align-items: center;
     overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
 }
 
