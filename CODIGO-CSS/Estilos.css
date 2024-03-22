@@ -131,8 +131,7 @@ main{
 
 .contenedor_Listas {
     display: flex;
-    justify-content: center; 
-    width: 90%;  
+    justify-content: center;
     padding: 0 2em;
     align-items: center;
 }
@@ -159,20 +158,8 @@ main{
     display: flex;
     padding: 0 2em;
     text-align: center;
-    width: 200px;
-}
-#orden_listas li a img {
-    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-    height: auto; /* Ajusta automáticamente la altura de la imagen para mantener la proporción */
 }
 
-.contenedor_Listas {
-    display: flex;
-    justify-content: center; 
-    width: 90%;  
-    padding: 0 2em;
-    align-items: center;
-}
 #contenedor_tres_juegos {
     display: flex;
     padding: 5px;
@@ -180,17 +167,24 @@ main{
     max-width: 100%
 }
 #contenedor_tres_juegos li {  
-    margin-top: 30px; 
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     padding: 0 2em;
     width: 200px;
 }
 #contenedor_tres_juegos li img {
     max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-    height: 60px;
+    height: 170px;
 }
 #contenedor_tres_juegos li div{
     vertical-align: middle;
+}
+
+#your_favourites{
+    font-size: 45px;
+    text-shadow: 1px 1px 5px #fff;
 }
 
 .estilo_estrella{
@@ -198,7 +192,7 @@ main{
     right: 0;
     color: yellow; /* Color amarillo para la estrella */
     text-shadow: 1px 1px 5px #fff; /* Efecto de sombra para un brillo */
-    font-size: 30px;
+    font-size: 45px;
     display: inline-block;
     padding: 5px;
 }
@@ -380,10 +374,6 @@ th {
         align-items: center;
     }
 
-    .líneaJuegos {
-        width: 90%;
-    }
-
     .filtros{
         padding: 1em;
         margin: 1.1em 10em;
@@ -409,10 +399,17 @@ th {
     }
 
     #contenedor_tres_juegos li {  
-        margin-top: 20px; 
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         display: flex;
         padding: 0 1em;
         width: 150px;
+    }
+
+    #contenedor_tres_juegos li img {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        height: 140px;
     }
 
     .CabeceraLista{
@@ -437,5 +434,8 @@ th {
         margin-right: 30px;
     }
 
+    .estilo_estrella{
+        font-size: 35px;
+    }
 
 }
