@@ -160,6 +160,10 @@ main{
     text-align: center;
 }
 
+#orden_listas li a img{
+
+}
+
 #contenedor_tres_juegos {
     display: flex;
     padding: 5px;
@@ -436,6 +440,16 @@ th {
 
     .estilo_estrella{
         font-size: 35px;
+    }
+
+    #orden_listas li a img{
+        height: 110px;
+        width: auto;
+    }
+
+    #foto_perfil img{
+        height:240px;
+        width: auto;
     }
 
 }
