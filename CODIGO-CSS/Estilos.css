@@ -360,6 +360,23 @@ th {
     background-color: #006eff;
 }
 
+#news_title{
+    padding: 1em;
+    margin: 0.5em 15em;
+    background-color: aquamarine;
+}
+
+#imagen_central img{
+    margin-top: 1em;
+    width: 70%;
+    height: 25%;
+}
+
+#noticia p{
+    justify-content: center;
+    margin: 1em 15%;
+}
+
 /*RESPONSIVE Tablet*/
 @media(max-width: 992px){
 
@@ -450,6 +467,11 @@ th {
     #foto_perfil img{
         height:240px;
         width: auto;
+    }
+
+    #news_title{
+        padding: 0.8em;
+        margin: 0.4em 8em;
     }
 
 }
