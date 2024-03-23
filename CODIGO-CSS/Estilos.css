@@ -98,13 +98,30 @@ main{
     color: azure;
 }
 
+.carousel_move{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_move div{
+    margin: 0px 10px;
+    font-size: xx-large;
+}
+
 .CabeceraLista{
     background-color: rgb(200, 233, 200);
     padding: 1.875em;
     margin: 1.25em 17em;
-    text-align: center;
+    align-items: center;
     display: flex;
 }
+
+.FiltrosLista{
+    display: flex;
+    align-items: center;
+}
+
 .NombreLista{
     width: 22%;
     background-color: #00b7ff;
@@ -124,7 +141,8 @@ main{
     margin: 0em 4.375em;
     background-color: rgb(0, 94, 218);
     color: rgb(167, 167, 167);
-    width: 22%;
+    width: 14em;
+    height: 4.5em;
     padding: 0.5em;
     border-radius: 25%;
 }
@@ -395,6 +413,10 @@ th {
         align-items: center;
     }
 
+    .líneaJuegos {
+        width: 90%;
+    }
+
     .filtros{
         padding: 1em;
         margin: 1.1em 10em;
@@ -407,6 +429,15 @@ th {
         height: 3.5em;
         color: aliceblue;
         background-color: #006eff;
+    }
+
+    .CabeceraLista button{
+        margin: 0em 3.8em;
+        background-color: rgb(0, 94, 218);
+        color: rgb(167, 167, 167);
+        width: 9em;
+        height: 2.5em;
+        padding: 0.3em;
     }
 
     #imagenes_descripcion{

@@ -1,127 +1,8 @@
 <html lang="">
     <head>
-        <style>
-            /*estilo compartido con todas las páginas*/
-            body {
-                background: linear-gradient(to right, #00ff95, #00b7ff);
-                background-repeat: no-repeat;
-                background-size: cover;
-                margin: 0; /* Asegura que no haya márgenes */
-                padding: 0; /* Asegura que no haya relleno */
-                min-height: 100vh; /*Esto es para que siempre se cree el body ajustándose al tamaño de la pantalla*/
-                position: relative;
-                padding-bottom: 5em;
-            } 
-            main{
-                align-items: center;
-                display: inline;
-                position: relative;
-                overflow: auto;
-                text-align: center;
-            }   
-            nav {
-                display:inline-block;
-                text-align: center;
-                overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
-                background-color:lightblue;
-                padding: 20px 0px;
-                width: 100%;
-            }
-            nav a {
-                margin-right: 100px; 
-            }
-            .li_style_buscador{
-                width: 22%;
-                float: right;
-                margin-right: 30px;
-            } 
-            footer {
-                background-color: aquamarine;
-                padding: 1em 0;
-                width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
-                bottom: 0; /*Para que vaya al final*/
-                position: absolute; /*Para que siempre este al final*/
-                text-align: center;
-                display: inline;
-            }
-            footer img {
-                width: 2.5em; /* Tamaño deseado en píxeles */
-                height: auto; /* Esto asegura que la proporción se mantenga */
-                padding: 0.5em;
-            }     
-            /*fin estilo compartido con todas las páginas*/
-            .mySlides_fade {
-                margin: auto;
-                text-align: center;
-                width: 70%;
-                height: 400px;
-                background-color: aqua;
-                position: relative;
-                z-index: 1;
-            }
-            .mySlides_fade img{
-                width: 100%; 
-                height: 100%;
-            } 
-            .líneaJuegos {
-                display: flex; /* Usa flexbox */
-                flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas */
-                justify-content: center;
-                width: 80%;
-                align-items: center;
-                margin: auto; /*para que este centrado*/
-            }
-            .líneaJuegos img {
-                width: 200px; /* Establece el ancho deseado para las imágenes */
-                height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-                margin: 1em 2em; /* Ajusta el margen entre las imágenes */
-            }
-        
-            #contenedor_imagenes_noticias{
-                width: 40%;
-                max-height: 40%;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                padding: 5px;
-                border-color: black;
-                border-style: double;
-            }
-            #contenedor_imagenes_noticias img{ 
-                width: 80%; 
-                max-height: 200px;
-                object-fit: cover; 
-                padding: 30px;
-            }
-            #contenedor_imagenes_destacadas{
-                width: 40%;
-                max-height: 40%;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                margin-right: 30px;
-                padding: 5px;
-                border-color: black;
-                border-style:solid;
-                display: inline-block;
-            }
-
-            #contenedor_imagenes_destacadas img{
-                width: 40%; 
-                max-height: 200px;
-                object-fit: cover; 
-                padding: 30px 15px;
-            }
-   
-            .prev {
-                left: 0; /* Alinea a la izquierda */
-            }
-
-            /* Estilo del botón de dirección derecha */
-            .next {
-                right: 0; /* Alinea a la derecha */
-            }
-        </style>
-
-        <title> Pagina Juegos</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../CODIGO-CSS/Estilos.css">
+        <title> MyGameList </title>
         <script src="../../CODIGO-JAVASCRIPT/carousel.js"></script>
     </head>
     <body>
@@ -141,11 +22,13 @@
         <main>
             <section>
                 <h2>Novedades</h2>
-                    <div class="mySlides_fade">
-                        <img src = "imagenEjemplo.jpg">
-                    </div>
-                    <div class = "prev" onclick="moveCarousel(-1)">❮</div>
-                    <div class = "next" onclick="moveCarousel(1)">❯</div>
+                <div class="mySlides_fade">
+                    <img src = "imagenEjemplo.jpg">
+                </div>
+                <section class="carousel_move">
+                    <div onclick="moveCarousel(-1)">❮</div><div onclick="moveCarousel(1)">❯</div>
+                </section>
+
             </section>
             
             
