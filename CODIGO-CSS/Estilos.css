@@ -45,7 +45,7 @@ nav a:hover,
     color: #0046ff;
 }
 
-#logo{
+.logo{
     float: left;
 }
 
@@ -61,7 +61,8 @@ footer {
     bottom: 0; /*Para que vaya al final*/
     position: absolute; /*Para que siempre este al final*/
     text-align: center;
-    display: inline;
+    display: flex;
+    justify-content: space-evenly;
 }
 footer img {
 width: 40px; /* Tamaño deseado en píxeles */
@@ -559,7 +560,7 @@ th {
         color: #ffffff;
     }
 
-    #logo{
+    .logo{
         display: inline-block;
     }
 
