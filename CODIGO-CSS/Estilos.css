@@ -538,8 +538,25 @@ th {
 /*--------------------------------------RESPONSIVE Móvil----------------------------*/
 @media(max-width: 400px){
 
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2d3032;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+        align-items: unset;
+        display: block;
+    }
     nav a {
-        display: none;
+        margin-right: 0;
+        display: block;
+        padding: 25px;
+        color: #ffffff;
     }
 
     #logo{
@@ -548,6 +565,27 @@ th {
 
     .li_style_buscador{
         margin-right: 0;
+    }
+
+    .mostrar_menú,
+    .ocultar_menú{
+        display: block;
+    }
+
+    .ocultar_menú{
+        color: white;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    nav a:hover,
+    .ocultar_menú:hover{
+        color: #2cfd7e;
+    }
+
+    #check:checked ~ nav{
+        right: 0;
     }
 
 }
