@@ -4,17 +4,13 @@ function addTemplate(id) {
         let span = id.querySelector()
     
 }
-function add(url, id, idPagina) {
+function add(url, id) {
     fetch(url)
         .then(response => {
             return response.text();
         })
         .then(data => {
-            const container = id.content.cloneNode(true);
-            idPagina.appendChild(container);
+            let container = document.querySelector(id);
             container.innerHTML = data;
         })
-        .catch(error => {
-            console.error('Error al cargar el template:', error);
-        });
 }

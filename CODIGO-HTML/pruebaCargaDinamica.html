@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="../CODIGO-JAVASCRIPT/cargarTemplate.js" ></script>
+    <link href="../estilos.css" rel="stylesheet">
 </head>
 <body>
-<template id = "tempHeader"></template>
-<script src="../CODIGO-JAVASCRIPT/cargarTemplate.js"></script>
-<script>    document.addEventListener("DOMContentLoaded", function() {
-                 add("TEMPLATES/Header/header.html", "header", "tempHeader");
-            });
+<header></header>
+<footer></footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        add('TEMPLATES/Header/header.html', 'header');
+        add('TEMPLATES/Footer/footer.html', 'footer');
+    });
 </script>
 
 </body>
