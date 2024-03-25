@@ -4,13 +4,14 @@ function addTemplate(id) {
         let span = id.querySelector()
     
 }
-function add(url, id) {
+function add(url, id, idPagina) {
     fetch(url)
         .then(response => {
             return response.text();
         })
         .then(data => {
-            let container = document.querySelector(id);
+            const container = id.content.cloneNode(true);
+            idPagina.appendChild(container);
             container.innerHTML = data;
         })
         .catch(error => {
