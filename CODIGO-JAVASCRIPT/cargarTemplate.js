@@ -1,8 +1,8 @@
 function addTemplate(id) {
 
-        let template = id.content.cloneNode();
-        let span = id.querySelector()
-    
+    let template = id.content.cloneNode();
+    let span = id.querySelector()
+
 }
 function add(url, id) {
     fetch(url)
