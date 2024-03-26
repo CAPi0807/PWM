@@ -5,19 +5,22 @@
         <link rel="stylesheet" href="../../CODIGO-CSS/Estilos.css">
     </head>
     <body>
-    <header>
-        <nav>
-            <a href="home.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em"></a>
-            <a href="perfil.html">Perfil</a>
-            <a href="Log_in.html">Log In</a>
-            <a href="Listas.html">Mis Listas</a>
-            <a href="About_us.html">About Us</a>
+        <header>
+            <a class="logo" href="home.html" style="float: left; margin-left: 1.5em;"><img src = "imagenEjemplo.jpg" width =  "50em"></a>
+            <input type="checkbox" id="check">
+            <nav>
+                <a href="perfil.html">Perfil</a>
+                <a href="Log_in.html">Log In</a>
+                <a href="Listas.html">Mis Listas</a>
+                <a href="About_us.html">About Us</a>
+                <label for="check" class="ocultar_menú">&#215</label>
+            </nav>
             <div class = "li_style_buscador">
                 Búsqueda de articulo: <input type="search" name="busquedaarticulo" placeholder="articulo, autor, empresa...">
                 <input type="submit" value="Buscar">
             </div>
-        </nav>
-    </header>
+            <label for="check" class="mostrar_menú">&#8801</label>
+        </header>
         <main>
             <section class="CabeceraLista">
                 <p class="NombreLista">Nombre de la lista</p>
