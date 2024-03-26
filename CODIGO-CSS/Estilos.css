@@ -89,6 +89,12 @@ main{
     text-align: center;
 }
 
+#articulos_home{
+    width: 100%;
+    display: flex;
+}
+
+
 .filtros{
     background-color: rgb(200, 233, 200);
     padding: 1.875em;
@@ -587,6 +593,56 @@ th {
 
     #check:checked ~ nav{
         right: 0;
+    }
+
+    .mySlides_fade {
+        width: 80%;
+        height: 200px;
+    }
+
+    #articulos_home{
+        display: block;
+    }
+
+    .líneaJuegos img {
+        width: 100px; /* Establece el ancho deseado para las imágenes */
+        height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+        margin: 0.5em 1em; /* Ajusta el margen entre las imágenes */
+    }
+
+    #contenedor_imagenes_destacadas{
+        width: 60%;
+        max-height: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 5px;
+        border-color: black;
+        border-style:solid;
+        display: inline-block;
+    }
+
+    #contenedor_imagenes_destacadas img{
+        max-height: 200px;
+        object-fit: cover;
+        padding: 10px 5px;
+    }
+
+    #contenedor_imagenes_noticias{
+        margin-left: 20%;
+        width: 60%;
+        max-height: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-color: black;
+        border-style: double;
+    }
+    #contenedor_imagenes_noticias img{
+        width: 60%;
+        max-height: 100px;
+        padding: 15px;
     }
 
 }
