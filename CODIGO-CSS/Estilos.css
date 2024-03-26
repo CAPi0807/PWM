@@ -384,8 +384,6 @@ th {
 #imagenes_descripcion{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 20em;
-    margin-right: 20em;
     margin-bottom: 5em;
     margin-top: 2.5em;
 }
@@ -398,6 +396,7 @@ th {
 #imagenes_descripcion div{
     vertical-align: middle;
     text-align: center;
+    width: 15em;
 }
 
 #segunda_imagen{
@@ -685,6 +684,37 @@ th {
         width: 80%;
         padding: 0.3em;
         margin: 10px
+    }
+
+    #texto_style{
+        margin: 0 10px;
+    }
+
+    #texto_style p{
+        color: white;
+    }
+
+    #imagenes_descripcion{
+        margin-bottom: 3em;
+        margin-top: 1.5em;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #imagenes_descripcion img{
+        width: 8em;
+        height: 8em;
+    }
+
+    #imagenes_descripcion div{
+        vertical-align: middle;
+        text-align: center;
+        width: 9em;
+        margin-bottom: 2em;
     }
 
 }
