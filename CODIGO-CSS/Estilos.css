@@ -645,4 +645,46 @@ th {
         padding: 15px;
     }
 
+    #boton3,
+    #boton4,
+    #imagenes_volatiles{
+        display: none;
+    }
+
+    .filtros{
+        padding: 0.6em;
+        margin: 0.5em 2em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .filtros button{
+        margin: 1em 1.5em;
+        width: 6em;
+        height: 3em;
+    }
+
+    .paginas_nav{
+        margin: 2em;
+    }
+
+    .CabeceraLista{
+        padding: 0.8em;
+        margin: 0.8em 4em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CabeceraLista button{
+        margin: 0em 1em;
+        width: 7em;
+        height: 3em;
+        padding: 0.2em;
+    }
+    .NombreLista{
+        width: 80%;
+        padding: 0.3em;
+        margin: 10px
+    }
+
 }
