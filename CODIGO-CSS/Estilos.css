@@ -282,7 +282,6 @@ main{
     margin-left: 4.5%;;
     margin-right: 4.5%;
     text-align: left;
-    flex: 1;
 }
 
 #contenedor_imagenes_destacadas{
@@ -715,6 +714,40 @@ th {
         text-align: center;
         width: 9em;
         margin-bottom: 2em;
+    }
+
+    #foto_perfil{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        margin-left: 4.5%;
+        margin-top: 2%;
+        height: unset;
+    }
+
+    #foto_perfil img{
+        height: 12em;
+        width: auto;
+    }
+
+    .descripcion_juego {
+        width: 90%;
+        max-width: none;
+        margin-left: 3%;;
+        margin-right: 3%;
+        text-align: left;
+    }
+
+    .descripcion_juego p{
+        word-wrap: break-word; /* Para que las palabras largas se dividan */
+        overflow-wrap: break-word; /* Alternativa para navegadores más antiguos */
+        width: unset;
+        max-width: 95%;
+    }
+
+    .info {
+        word-wrap: break-word; /* Para que las palabras largas se dividan */
+        overflow-wrap: break-word; /* Alternativa para navegadores más antiguos */
     }
 
 }
