@@ -1,15 +1,34 @@
 [
-    {
-      "title": "Título del Artículo 1",
-      "description": "Descripción del artículo 1. Este es un ejemplo de texto que podría ser la introducción o el resumen del artículo."
+  {
+    "titulo": "Super Mario Bros",
+    "genero": "Plataformas",
+    "fecha_de_lanzamiento": "13 de septiembre de 1985",
+    "desarrollador": "Nintendo",
+    "distribuidor": "Nintendo",
+    "consola": "Nintendo Entertainment System (NES)",
+    "logo": "super_mario_bros.jpg",
+    "sinopsis": "Super Mario Bros es un juego de plataformas desarrollado y publicado por Nintendo. Es uno de los juegos más icónicos de la historia de los videojuegos, protagonizado por Mario, un fontanero italiano, que debe rescatar a la princesa Peach del malvado Rey Koopa Bowser.",
+    "requisitos_minimos": {
+      "sistema_operativo": "NES",
+      "procesador": "CPU Ricoh 2A03 8-bit (MOS Technology 6502)",
+      "memoria": "2 KB RAM, 2 KB VRAM",
+      "grafica": "Procesador gráfico Personalizado (PPU)",
+      "directx": "N/A",
+      "almacenamiento": "Cartucho",
+      "tarjeta_de_sonido": "Ricoh 2A03 8-bit (MOS Technology 6502)"
     },
-    {
-      "title": "Título del Artículo 2",
-      "description": "Descripción del artículo 2. Este texto sirve como ejemplo de contenido que se cargará dinámicamente en tu página web."
+    "requisitos_recomendados": {
+      "sistema_operativo": "NES",
+      "procesador": "CPU Ricoh 2A03 8-bit (MOS Technology 6502)",
+      "memoria": "4 KB RAM, 2 KB VRAM",
+      "grafica": "Procesador gráfico Personalizado (PPU)",
+      "directx": "N/A",
+      "almacenamiento": "Cartucho",
+      "tarjeta_de_sonido": "Ricoh 2A03 8-bit (MOS Technology 6502)"
     },
-    {
-      "title": "Título del Artículo 3",
-      "description": "Descripción del artículo 3. Aquí puedes agregar más información sobre el tema del artículo, interesante y relevante para tus lectores."
+    "galeria": {
+
     }
-  ]
+  }
+]
   

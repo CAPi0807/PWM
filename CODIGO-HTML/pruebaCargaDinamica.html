@@ -8,10 +8,32 @@
 </head>
 <body>
 <div id = "contenidoheader"> </div>
+<main>
+    <h2>Novedades</h2>
+    <div id = "contenidoslider"> </div>
+    <section class="líneaJuegos">
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+        <img src = "imagenEjemplo.jpg" >
+    </section>
+    <section id="articulos_home">
+
+    </section>
+</main>
 <div id = "contenidofooter"> </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         add('TEMPLATES/Header/header.html', '#contenidoheader');
+        add('TEMPLATES/templates_home/slider.html', '#contenidoslider');
+        add('TEMPLATES/templates_home/cuadroImagenes.html', '#contenedor-cuadro-imagenes');
+        add('TEMPLATES/templates_home/imagenes_destacados.html', '#articulos_home');
         add('TEMPLATES/Footer/footer.html', '#contenidofooter');
     });
 </script>
