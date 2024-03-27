@@ -778,4 +778,9 @@ th {
         height: 70px;
     }
 
+    #news_title{
+        padding: 0.5em;
+        margin: 0.5em 1em;
+    }
+
 }
