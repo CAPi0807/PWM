@@ -213,10 +213,6 @@ main{
     text-align: center;
 }
 
-#orden_listas li a img{
-
-}
-
 #contenedor_tres_juegos {
     display: flex;
     padding: 5px;
@@ -720,8 +716,9 @@ th {
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        margin-left: 4.5%;
+        margin-left: 0;
         margin-top: 2%;
+        margin-bottom: 3em;
         height: unset;
     }
 
@@ -781,6 +778,38 @@ th {
     #news_title{
         padding: 0.5em;
         margin: 0.5em 1em;
+    }
+
+    .contenedor_Listas {
+        padding: 0 1em;
+        margin: 1em 0;
+    }
+
+    .contenedor_Listas button{
+        width: 3em;
+        height: 3em;
+    }
+
+    #orden_listas li{
+        margin-top: 5px;
+        display: flex;
+        padding: 0;
+    }
+
+    #orden_listas li a img{
+        height: 70px;
+    }
+
+    #Mas_listas {
+        margin: 5em 4em;
+    }
+
+    #your_favourites{
+        font-size: 35px;
+    }
+
+    #contenedor_tres_juegos{
+        flex-direction: column;
     }
 
 }
