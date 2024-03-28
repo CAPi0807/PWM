@@ -9,7 +9,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     overflow: auto; /*para que los textos no se salgan del contenedor al cambiar dimensiones de la pantalla y añade barras para moverse*/
-    background-color:lightblue;
+    background-color: #0488b0;
     padding: 1em 0em;
     width: 100%;
 }
@@ -55,7 +55,7 @@ nav a:hover,
 }
 
 footer {
-    background-color: aquamarine;
+    background-color: #376758;
     padding: 1em 0;
     width: 100%; /*Como es absolute necesito esto para que se ajuste a la página*/
     bottom: 0; /*Para que vaya al final*/
@@ -71,7 +71,7 @@ padding: 10px;
 }
 
 body {
-    background: linear-gradient(to left, #47cc7a, #2d3032);
+    background: #2d3032;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0; /* Asegura que no haya márgenes */
